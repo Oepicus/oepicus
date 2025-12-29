@@ -2,6 +2,15 @@
 <html lang="en" class="scroll-smooth">
 
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-4XV6K8C74B');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -1178,17 +1187,17 @@
             }
 
             function initAnalytics() {
-                const gaScript = document.createElement('script');
-                gaScript.async = true;
-                gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B';
-                document.head.appendChild(gaScript);
+                // const gaScript = document.createElement('script');
+                // gaScript.async = true;
+                // gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B';
+                // document.head.appendChild(gaScript);
 
-                gaScript.onload = () => {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-4XV6K8C74B');
-                }
+                // gaScript.onload = () => {
+                //     window.dataLayer = window.dataLayer || [];
+                //     function gtag() { dataLayer.push(arguments); }
+                //     gtag('js', new Date());
+                //     gtag('config', 'G-4XV6K8C74B');
+                // }
             }
 
             document.addEventListener('DOMContentLoaded', () => {
