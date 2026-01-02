@@ -247,6 +247,39 @@
                 transform: scale(1.3);
             }
 
+            /* Heartbeat Background */
+            .bg-heartbeat {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .bg-heartbeat::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 150%;
+                padding-bottom: 150%;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(138, 37, 37, 0.5) 0%, transparent 70%);
+                animation: heartbeat 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+                transform-origin: center;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+
+            @keyframes heartbeat {
+                0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+                10% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                20% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+                30% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+                40% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                50% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+                100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+            }
+
+
             /* Hero Carousel Transitions */
             .hero-slide {
                 transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -369,33 +402,46 @@
             </div>
         </header>
 
-        <!-- THE FOUNDRY -->
+
+        <!-- Kickstarter Launch Section -->
+        <section class="py-12 bg-black/40 border-y border-white/10 relative z-10 bg-heartbeat">
+            <div class="max-w-4xl mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                <p class="text-lg md:text-xl text-text-muted">
+                    Launching on
+                </p>
+                <img src="assets/kickstarter_logo_2019.svg" alt="Kickstarter" class="h-5">
+                <p class="text-lg md:text-xl text-text-muted">
+                    February 2026
+                </p>
+            </div>
+        </section>
+
+        <!-- Oepicus Club -->
         <section class="py-12 relative z-10 bg-brand-red/90 backdrop-blur-sm overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/80 to-transparent"></div>
             <div class="max-w-5xl mx-auto px-6 relative z-20 text-center">
-                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">THE FOUNDRY</h2>
-                <p class="text-brand-gold font-bold uppercase tracking-widest text-xs md:text-sm mb-8">Encrypted Channel // Limited Access</p>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">Oepicus Club</h2>
+                <p class="text-brand-gold font-bold uppercase tracking-widest text-xs md:text-sm mb-8">Exclusive Offers // Top Secret Information</p>
                 <p class="text-white/80 text-base md:text-lg mb-8 max-w-3xl mx-auto font-light">
                     The Apollon Series launches on Kickstarter this February.
-                    Join The Foundry to get pre-launch updates, early access, and exclusive offers before pledges go live.
+                    Join Oepicus Club to get pre-launch updates, early access, and exclusive offers before pledges go live.
                 </p>
-                <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" id="subscribe-form">
+                <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" data-form="subscribe">
                     <div class="relative flex-1">
                         <i data-lucide="mail" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4"></i>
-                        <input type="email" id="email" name="email" placeholder="ENTER EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
+                        <input type="email" name="email" placeholder="ENTER EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
                     </div>
                     <!-- Hidden field for tags -->
-                    <input type="hidden" id="tags" name="tags" value="oepicus_landing_page">
+                    <input type="hidden" name="tags" value="oepicus_landing_page">
 
                     <button type="submit" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors rounded-sm h-14 flex items-center justify-center gap-2 text-xs">
                         GRAB UPDATES <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </button>
                 </form>
-                <div id="response-message" class="mt-3"></div>
+                <div class="response-message mt-3"></div>
 
             </div>
         </section>
-
 
         <!-- Stats Strip -->
         <div class="border-y border-white/10 bg-black/60 backdrop-blur-xl z-10 relative">
@@ -645,48 +691,65 @@
         </section>
 
         <!-- Contact Us Section -->
-        <section id="contact" class="py-24 md:py-32 px-6 relative z-10 border-t border-white/5 bg-black/30">
+        <section id="contact" class="py-24 md:py-32 px-6 relative z-10 border-t border-white/5 bg-black/30 space-y-24">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 fade-in-up">Connect With Us</h2>
                 <p class="text-text-muted mb-12 fade-in-up max-w-2xl mx-auto">Have questions or just want to talk shop? Join our community channels to connect directly with the team and other musicians.</p>
 
                 <div class="grid md:grid-cols-3 gap-8 md:gap-12 fade-in-up" style="transition-delay: 100ms;">
                     <!-- Discord -->
-                    <div class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300">
+                    <a href="https://discord.gg/5ygA5QJuar" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
                         <img src="assets/discord_qr.svg" alt="Discord QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
                         <div class="text-center">
                             <h3 class="text-xl font-display font-bold text-white mb-2">Talk to us on Discord</h3>
                             <p class="text-text-muted text-sm mb-4">The main hub for community discussion, support, and sneak peeks.</p>
-                            <a href="https://discord.gg/5ygA5QJuar" target="_blank" class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest group">
+                            <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
                                 Join Server <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- WhatsApp Group -->
-                    <div class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300">
+                    <a href="https://chat.whatsapp.com/FT1yjd0W5Pl7VW3VLkV0Xr" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
                         <img src="assets/whatsapp_qr.svg" alt="WhatsApp QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
                         <div class="text-center">
                             <h3 class="text-xl font-display font-bold text-white mb-2">Group Chat on WhatsApp</h3>
                             <p class="text-text-muted text-sm mb-4">For general discussion and quick questions with the community.</p>
-                            <a href="https://chat.whatsapp.com/FT1yjd0W5Pl7VW3VLkV0Xr" target="_blank" class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest group">
+                            <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
                                 Join Chat <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- WhatsApp Channel -->
-                    <div class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300">
+                    <a href="https://whatsapp.com/channel/0029Vb7OoBPHgZWhOOVVlp3u" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
                         <img src="assets/whatsapp_channel_qr.svg" alt="WhatsApp Channel QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
                         <div class="text-center">
                             <h3 class="text-xl font-display font-bold text-white mb-2">Updates on WhatsApp</h3>
                             <p class="text-text-muted text-sm mb-4">A broadcast-only channel for the latest news and announcements.</p>
-                            <a href="https://whatsapp.com/channel/0029Vb7OoBPHgZWhOOVVlp3u" target="_blank" class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest group">
+                            <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
                                 Follow Channel <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
                 </div>
+            </div>
+            <div class="max-w-lg mx-auto text-center fade-in-up">
+                <h3 class="text-2xl font-display font-bold mb-4">Subscribe to Newsletter</h3>
+                <p class="text-text-muted mb-8 text-sm">Get the latest signals from Oepicus, including product announcements, articles, and exclusive offers.</p>
+                <form class="flex flex-col sm:flex-row gap-4" data-form="subscribe">
+                    <div class="relative flex-1">
+                        <i data-lucide="mail" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4"></i>
+                        <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
+                    </div>
+                    <!-- Hidden field for tags -->
+                    <input type="hidden" name="tags" value="oepicus_landing_page_footer">
+
+                    <button type="submit" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors rounded-sm h-14 flex items-center justify-center gap-2 text-xs">
+                        Subscribe <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </form>
+                <div class="response-message mt-3"></div>
             </div>
         </section>
 
@@ -1385,52 +1448,48 @@
         </script>
 
         <script>
-            document.getElementById('subscribe-form').addEventListener('submit', function (event) {
-                event.preventDefault();
+            document.querySelectorAll('form[data-form="subscribe"]').forEach(form => {
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
 
-                const form = event.target;
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData.entries());
-                const responseDiv = document.getElementById('response-message');
+                    const currentForm = event.target;
+                    const formData = new FormData(currentForm);
+                    const data = Object.fromEntries(formData.entries());
+                    const responseDiv = currentForm.nextElementSibling;
 
+                    // Handle tags - split by comma and trim whitespace, then create an array
+                    const tagsInput = currentForm.querySelector('input[name="tags"]');
+                    if (tagsInput && tagsInput.value) {
+                        data.tags = tagsInput.value.split(',').map(tag => tag.trim());
+                    }
 
-                // Handle tags - split by comma and trim whitespace, then create an array
-                const tagsInput = document.getElementById('tags').value;
-                if (tagsInput) {
-                    data.tags = tagsInput.split(',').map(tag => tag.trim());
-                }
+                    const baseUrl = 'https://inventor.1voct.org';
+                    const apiUrl = `${baseUrl}/inventor/api/create_crm_user/`;
 
-
-                // Toggle API URL based on the switch
-                // const useDevUrl = document.getElementById('url-switch').checked;
-                // const baseUrl = useDevUrl ? 'https://dev.1voct.org' : 'https://inventor.1voct.org';
-                const baseUrl = 'https://inventor.1voct.org';
-                // const baseUrl = 'https://dev.1voct.org';
-                const apiUrl = `${baseUrl}/inventor/api/create_crm_user/`;
-
-                fetch(apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data),
-                })
-                    .then(response => response.json())
-                    .then(result => {
-                        if (result.status === 'success') {
-                            responseDiv.className = 'alert alert-success';
-                            responseDiv.textContent = 'Thank you for subscribing!';
-                            form.reset();
-                        } else {
-                            responseDiv.className = 'alert alert-danger';
-                            responseDiv.textContent = 'Error: ' + (result.message || 'An unknown error occurred.');
-                        }
+                    fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
                     })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        responseDiv.className = 'alert alert-danger';
-                        responseDiv.textContent = 'A network error occurred. Please try again.';
-                    });
+                        .then(response => response.json())
+                        .then(result => {
+                            if (result.status === 'success') {
+                                responseDiv.className = 'text-brand-gold';
+                                responseDiv.textContent = 'Thank you for subscribing!';
+                                currentForm.reset();
+                            } else {
+                                responseDiv.className = 'text-red-400';
+                                responseDiv.textContent = 'Error: ' + (result.message || 'An unknown error occurred.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            responseDiv.className = 'text-red-400';
+                            responseDiv.textContent = 'A network error occurred. Please try again.';
+                        });
+                });
             });
         </script>
     </body>
