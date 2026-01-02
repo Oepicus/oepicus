@@ -907,7 +907,7 @@
                             <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Bypass</span><span class="text-xs md:text-sm font-bold text-white" id="spec-bypass">True</span></div>
                             <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Power</span><span class="text-xs md:text-sm font-bold text-white" id="spec-power">9V</span></div>
                             <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Draw</span><span class="text-xs md:text-sm font-bold text-white" id="spec-draw">15mA</span></div>
-                            <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Origin</span><span class="text-xs md:text-sm font-bold text-white">Global</span></div>
+                            <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Origin</span><span class="text-xs md:text-sm font-bold text-white" id="spec-origin">Nobody Knows</span></div>
                         </div>
 
                         <!-- Extended Info Section (Dynamically Injected) -->
@@ -1036,114 +1036,24 @@
             // UPDATED: Now uses 'images' array instead of single 'image' string.
             const inventory = [
                 {
-                    id: 'OE-01',
-                    name: 'Pyr',
-                    subtitle: 'Expressive Distortion',
-                    price: 189,
-                    category: 'Fuzz',
-                    images: [
-                        'assets/Pyr1.png',
-                        'assets/Pyr2.png'
-                    ],
-                    specs: { bypass: 'Buffered', draw: '15mA', power: '9V DC' },
-                    features: [
-                        '<strong>2-Stage MOSFET Fuzz Gain Block</strong><br><span class="text-text-muted font-light">Delivers a wide dynamic range, from controlled overdrive through fractured distortion to unstable fuzz, depending largely on how firmly you insist.</span>',
-                        '<strong>Precision Tone Shaping</strong><br><span class="text-text-muted font-light">A 1 dB high-pass filter refines low-end focus without stripping weight, preserving articulation and preventing unnecessary rumbling.</span>',
-                        '<strong>Buffered Output</strong><br><span class="text-text-muted font-light">Ensures consistent signal integrity across complex rigs, with smooth output control and no surprises of the electrical kind.</span>',
-                        '<strong>Expressive by Design</strong><br><span class="text-text-muted font-light">Maintains clarity at lower settings; introduces harmonic collision, octave artifacts, and mild unruliness when pushed.</span>',
-                        '<strong>Built as an Instrument</strong><br><span class="text-text-muted font-light">Engineered for reliability on stage and depth in the studio. Responds best to attention.</span>'
-                    ],
-                    desc: "Pyr is an expressive distortion instrument shaped by internal tension and release. Guided by Apollo&mdash;god of light, music, and inconvenient truths&mdash;it explores the narrow boundary where control, clarity, and intensity briefly agree to coexist. This is not a traditional fuzz pedal, and it would prefer not to be mistaken for one. Pyr moves fluidly between articulate overdrive, fractured distortion, and unstable fuzz, responding directly to playing dynamics, signal level, and intent. Play gently and it behaves with admirable restraint. Push harder and it begins to reveal its more complicated opinions about harmony. Designed for guitar, bass, synth, modular, and CV-driven systems, Pyr integrates naturally into modern pedalboards and more ambitious signal paths alike.",
-                    extendedInfo: `
-                    <div class="pt-4 border-t border-white/10">
-                        <h4 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-4">Controls & CV Architecture</h4>
-                        <div class="space-y-4">
-                            <div>
-                                <strong class="text-white block mb-1">LEVEL &mdash; Projection</strong>
-                                <p>Sets overall output and presence in the mix. There is ample volume available should you wish to exceed your input level, encourage an amplifier, or make your intentions known.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">TONE &mdash; Clarity (CV IN)</strong>
-                                <p>Shapes focus and articulation, moving from dense and weighted to sharp and exposed, depending on mood and voltage.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">LOW GAIN &mdash; Tension (CV IN)</strong>
-                                <p>Adds body, saturation, and harmonic depth while maintaining dynamic response. The sound tightens, thickens, and waits to see what happens next.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">HIGH GAIN &mdash; Fracture (CV IN)</strong>
-                                <p>Introduces aggressive saturation and upper-harmonic emphasis. Things become brighter, sharper, and increasingly difficult to ignore.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">LOW FREQUENCY SWITCH</strong>
-                                <ul class="list-disc pl-4 space-y-1">
-                                    <li><strong>Engaged:</strong> Extended low-end response for bass, drones, and weight-driven textures</li>
-                                    <li><strong>Disengaged:</strong> Tightened low end for clarity and definition</li>
-                                </ul>
-                            </div>
-                            <p class="italic text-brand-gold/80">Dedicated CV inputs allow envelopes, LFOs, and sequencers to modulate Pyr in real time&mdash;bridging pedalboard workflows with modular expression, and occasionally starting conversations between systems that didn't previously speak.</p>
-                        </div>
-                    </div>
-                    <div class="pt-6 border-t border-white/10 mt-6">
-                        <h4 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-4">Threshold Interaction</h4>
-                        <p>When LOW and HIGH GAIN are driven beyond moderate settings, Pyr enters a complex interaction zone. Harmonics fold, octave artifacts emerge, and subtle oscillations appear. This is not a fault. It is an invitation&mdash;one that rewards exploration, restraint, and the understanding that predictability is sometimes overrated.</p>
-                    </div>
-                `
-                },
-                {
                     id: 'OE-02',
                     name: 'Tyrus',
-                    subtitle: 'Wavefolding Swan Song',
+                    subtitle: 'Boost & Envelope Wavefolder',
                     price: 199,
                     category: 'Modulation',
                     images: [
                         'assets/Tyrus1.png',
                         'assets/Tyrus2.png'
                     ],
-                    specs: { bypass: 'Buffered', draw: '25mA', power: '9-18V DC' },
+                    specs: { bypass: 'Buffered', draw: '85mA', power: '9V DC', origin: "The Fold Point" },
                     features: [
                         '<strong>Analog Boost + Envelope-Driven Wavefolder</strong><br><span class="text-text-muted font-light">A dynamic front end feeds a responsive wavefolding stage, letting harmonics emerge according to touch rather than force alone.</span>',
                         '<strong>Dynamic, Not Compressed</strong><br><span class="text-text-muted font-light">Playing nuance is preserved. Each note unfolds differently depending on attack, sustain, and intent.</span>',
                         '<strong>Wide Harmonic Vocabulary</strong><br><span class="text-text-muted font-light">Moves fluidly from radiant edge and vocal saturation to metallic tension and carefully managed chaos.</span>',
-                        '<strong>Symmetry and Fracture</strong><br><span class="text-text-muted font-light">Clean and folded signals coexist&mdash;stillness and pressure meeting at the fold point, usually without arguing.</span>'
+                        '<strong>Symmetry and Fracture</strong><br><span class="text-text-muted font-light">Clean and folded signals coexist—stillness and pressure meeting at the fold point, usually without arguing.</span>'
                     ],
-                    desc: "Tyrus is an expressive wavefolding instrument shaped by touch, force, and balance. Guided by Apollo&mdash;and the sacred swans said to carry his voice&mdash;it explores that precise moment when harmony is gently persuaded into transformation. This is not a conventional distortion pedal, nor is it interested in pretending to be one. At its core, Tyrus pairs an always-on analog boost with an envelope-driven wavefolder, allowing sound to respond naturally to how it's played. Play lightly and the tone remains open and articulate. Dig in and the waveform bends, blooms, and fractures&mdash;revealing harmonics that feel reactive, vocal, and very much alive. Tyrus doesn't compress your playing into obedience; it listens, then responds.",
-                    extendedInfo: `
-                    <div class="pt-4 border-t border-white/10">
-                        <h4 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-4">Controls & CV Architecture</h4>
-                        <div class="space-y-4">
-                            <div>
-                                <strong class="text-white block mb-1">BOOST</strong>
-                                <p>An always-on input stage that determines how firmly your signal enters Tyrus. Lower settings preserve clarity and poise; higher settings apply gentle insistence, driving the wavefolder with increased weight and harmonic density.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">WAVE LEVEL</strong>
-                                <p>Controls the output level of the wavefolded signal. Subtle settings keep harmonics restrained; higher settings bring folded textures forward with bold, synth-like presence.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">ENVELOPE &mdash; Fast / Smooth</strong>
-                                <p>Sets how quickly Tyrus responds to playing dynamics. <strong>Fast</strong> delivers immediate, percussive articulation. <strong>Smooth</strong> allows harmonics to bloom gradually, producing a more organic, vocal response.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">ENVELOPE FOLD MOD</strong>
-                                <p>Determines how strongly playing dynamics influence the fold. Lower settings keep the waveform composed; higher settings allow each note to actively reshape itself, sometimes enthusiastically.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">BIAS</strong>
-                                <p>Offsets the wavefolding center point. Neutral maintains symmetrical folding; adjustment introduces asymmetric harmonics, added grit, and a touch of tension where appropriate.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">FOLD AMOUNT</strong>
-                                <p>Controls the overall intensity of wavefolding. Lower settings add richness and edge; higher settings produce complex, metallic textures and dense harmonic saturation.</p>
-                            </div>
-                            <div>
-                                <strong class="text-white block mb-1">TONE</strong>
-                                <p>Shapes the final output via a high-pass filter. Roll back for darker, thicker sounds, or open it up for shimmer, bite, and upper harmonics&mdash;useful when the swans get excited.</p>
-                            </div>
-                        </div>
-                    </div>
-                `
-                },
+                    desc: "Tyrus is an expressive wavefolding instrument shaped by touch, force, and balance. Guided by Apollo and the sacred swans said to carry his voice, it explores that precise moment when harmony is gently persuaded into transformation. This is not a conventional distortion pedal, nor is it interested in pretending to be one. At its core, Tyrus pairs an always-on analog boost with an envelope-driven wavefolder, allowing sound to respond naturally to how it's played. Play lightly and the tone remains open and articulate. Dig in and the waveform bends, blooms, and fractures; revealing harmonics that feel reactive, vocal, and very much alive. Tyrus doesn't compress your playing into obedience; it listens, then responds.",
+               },
                 {
                     id: 'OE-03',
                     name: 'Eclipse',
@@ -1154,9 +1064,14 @@
                         'assets/Eclipse1.png',
                         'assets/Eclipse2.png'
                     ],
-                    specs: { bypass: 'True Bypass', draw: '60mA', power: '9V DC' },
-                    features: ['Parallel Filters', 'LFO Modulation', 'Stereo Image', 'Frequency Sculpting'],
-                    desc: 'Dark, swirling modulation meets precise frequency sculpting. Eclipse runs two resonant filters in parallel, modulated by a complex LFO.',
+                    specs: { bypass: 'True Bypass', draw: '130mA', power: '9V DC', origin: "When the Light Looked Away" },
+                    features: [
+                        '<strong>Parallel Dual-Filter Architecture</strong><br><span class="text-text-muted font-light">Two resonant filters operate side by side, allowing frequencies to interact, overlap, and part ways with dignity.</span>',
+                        '<strong>Complex LFO Modulation</strong><br><span class="text-text-muted font-light">Drives evolving motion across the filter paths, producing organic sweeps, rhythmic pulses, and slow, hypnotic shifts.</span>',
+                        '<strong>Stereo Image Control</strong><br><span class="text-text-muted font-light">Creates width, movement, and spatial depth, making sound feel larger, closer, or slightly off to one side.</span>',
+                        '<strong>Precision Frequency Sculpting</strong><br><span class="text-text-muted font-light">Capable of both surgical tone shaping and immersive modulation, depending on how deliberately you approach it.</span>'
+                    ],
+                    desc: 'Eclipse is an instrument concerned with light, shadow, and what happens when both decide to occupy the same space. Guided by Apollo during one of his more contemplative moments, Eclipse explores the boundary where clarity gives way to motion, and motion becomes something quietly hypnotic. This is not a single filter doing a single job. Eclipse prefers to work in pairs.\n\nAt its core, Eclipse runs two resonant filters in parallel, allowing frequencies to be shaped, divided, and recombined while a complex LFO gently encourages them to move. Used with restraint, it delivers precise frequency sculpting and subtle spatial movement. Used with less restraint, it produces dark, swirling modulation that suggests depth, orbit, and the slow mechanics of celestial events. Designed for guitar, bass, synth, and modular systems, Eclipse integrates naturally into rigs that appreciate nuance, patience, and the occasional moment of controlled obscurity.\n\nNothing disappears entirely. It just moves.',
                     extendedInfo: ''
                 },
                 {
@@ -1169,25 +1084,54 @@
                         'assets/Aeon1.png',
                         'assets/Aeon2.png'
                     ],
-                    specs: { bypass: 'Buffered', draw: '85mA', power: '9V DC' },
-                    features: ['BBD Analog Path', 'Sub-Octave Gen', 'Infinite Oscillation', 'Trails Mode'],
-                    desc: 'Time and depth combined. Aeon pairs a classic bucket-brigade delay with a pristine sub-octave generator.',
+                    specs: { bypass: 'Buffered', draw: '85mA', power: '9V DC', origin: "Later Than Expected" },
+                    features: [
+                        '<strong>Bucket-Brigade Delay Engine</strong><br><span class="text-text-muted font-light">Delivers warm, organic repeats with the gentle degradation expected of analog timekeeping.</span>',
+                        '<strong>Sub-Octave Generator</strong><br><span class="text-text-muted font-light">Adds a clean, stable octave below the signal or its repeats, introducing depth, weight, and the sense that something large is moving underneath.</span>',
+                        '<strong>Infinite Oscillation</strong><br><span class="text-text-muted font-light">Allows repeats to feed back indefinitely, creating evolving textures, drones, and moments of reflection that may last longer than anticipated.</span>',
+                        '<strong>Trails Mode</strong><br><span class="text-text-muted font-light">Lets echoes continue naturally after bypass, because abruptly stopping time rarely ends well.</span>'
+                    ],
+                    desc: 'Aeon is an instrument concerned with time, depth, and the uncomfortable realization that both are more flexible than advertised. Guided by Apollo in his role as keeper of rhythm and order (and occasional breaker of both), Aeon explores what happens when echoes are allowed to linger, multiply, and drop an octave for emphasis.\n\nAt its core, Aeon pairs a classic bucket-brigade delay with a pristine sub-octave generator, allowing repeats to sink lower and stretch further with each pass. Used sparingly, it delivers warm, dimensional delay with added weight and gravity. Used less sparingly, it begins to suggest that time may not be linear after all. Trails drift, notes fold back on themselves, and the octave below quietly insists on being heard. Designed for guitar, bass, synth, and modular systems, Aeon integrates naturally into rigs that value atmosphere, patience, and the courage to let a sound finish its sentence.\n\nInfinite oscillation is available for those moments when restraint feels optional.',
                     extendedInfo: ''
                 },
                 {
                     id: 'OE-05',
                     name: 'Maelstrom',
-                    subtitle: 'Noise Generator',
+                    subtitle: 'Total Noise Generator',
                     price: 199,
                     category: 'Fuzz',
                     images: [
                         'assets/Maelstrom2.png',
                         'assets/Maelstrom1.png'
                     ],
-                    specs: { bypass: 'True Bypass', draw: '40mA', power: '9V DC' },
-                    features: ['Pitch Loops', 'Feedback Control', 'Chaos Switch', 'Extreme Volume'],
-                    desc: 'Maelstrom is an instrument of chaos. It feeds your signal back into itself through a series of pitch-shifting loops. Warning: Can reach extreme output volumes.',
+                    specs: { bypass: 'True Bypass', draw: '40mA', power: '9V DC', origin: "Hell (With Notes)" },
+                    features: [
+                        '<strong>Tri-Engine Gain Architecture</strong><br><span class="text-text-muted font-light">DS-1–inspired distortion, Big Muff–style fuzz, and TS-9–influenced overdrive coexist in a single system, each contributing its own opinion about how sound should be treated.</span>',
+                        '<strong>Feedback Control</strong><br><span class="text-text-muted font-light">Routes your signal back into itself, allowing pitch, harmonics, and intensity to evolve dynamically. Small adjustments can produce large results.</span>',
+                        '<strong>Controlled Instability</strong><br><span class="text-text-muted font-light">Capable of tight, aggressive tones or expansive, self-interacting noise fields, depending largely on how much you encourage it.</span>',
+                        '<strong>Designed for Play, Not Safety</strong><br><span class="text-text-muted font-light">Rewards curiosity, attention, and a willingness to listen carefully before turning the next knob.</span>'
+                    ],
+                    desc: 'Maelstrom is an instrument of chaos, thoughtfully arranged. Guided by Apollo in one of his less orderly moods, it explores what happens when a signal is encouraged—repeatedly and with enthusiasm—to argue with itself. This is not a polite pedal, and it makes no promises about behaving sensibly once you invite it into the signal chain.\n\nAt its heart, Maelstrom feeds your sound back through a network of pitch-shifting and gain stages, allowing distortion, fuzz, and overdrive to collide in ways that are sometimes musical and occasionally enlightening. Set carefully, it delivers controlled aggression and layered harmonic density. Push further and it begins to form its own ideas about structure, rhythm, and volume. Designed for guitar, bass, synth, and modular systems alike, Maelstrom integrates naturally into rigs that value exploration, restraint, and the occasional moment of brave decision-making.\n\Warning: output levels may reach values best described as “committed.”',
                     extendedInfo: ''
+                },
+                {
+                    id: 'OE-01',
+                    name: 'Pyr',
+                    subtitle: 'Expressive Distortion',
+                    price: 189,
+                    category: 'Fuzz',
+                    images: [
+                        'assets/Pyr1.png',
+                        'assets/Pyr2.png'
+                    ],
+                    specs: { bypass: 'Buffered', draw: '15mA', power: '9V DC', origin: "A Controlled Burn" },
+                    features: [
+                        '<strong>3-Stage MOSFET Fuzz Gain Block</strong><br><span class="text-text-muted font-light">Delivers a wide dynamic range, from controlled overdrive through fractured distortion to unstable fuzz, depending largely on how firmly you insist.</span>',
+                        '<strong>Precision Tone Shaping</strong><br><span class="text-text-muted font-light">A 1 dB high-pass filter refines low-end focus without stripping weight, preserving articulation and preventing unnecessary rumbling.</span>',
+                        '<strong>Buffered Output</strong><br><span class="text-text-muted font-light">Ensures consistent signal integrity across complex rigs, with smooth output control and no surprises of the electrical kind.</span>',
+                        '<strong>Expressive by Design</strong><br><span class="text-text-muted font-light">Maintains clarity at lower settings; introduces harmonic collision, octave artifacts, and mild unruliness when pushed.</span>'
+                    ],
+                    desc: "Pyr is an expressive distortion instrument shaped by internal tension and release. Guided by Apollo—god of light, music, and inconvenient truths—it explores the narrow boundary where control, clarity, and intensity briefly agree to coexist. This is not a traditional fuzz pedal, and it would prefer not to be mistaken for one.\n\nPyr moves fluidly between articulate overdrive, fractured distortion, and unstable fuzz, responding directly to playing dynamics, signal level, and intent. Play gently and it behaves with admirable restraint. Push harder and it begins to reveal its more complicated opinions about harmony. Designed for guitar, bass, synth, modular, and CV-driven systems, Pyr integrates naturally into modern pedalboards and more ambitious signal paths alike.",
                 }
             ];
 
@@ -1304,6 +1248,7 @@
                 document.getElementById('spec-bypass').innerText = p.specs.bypass;
                 document.getElementById('spec-power').innerText = p.specs.power;
                 document.getElementById('spec-draw').innerText = p.specs.draw;
+                document.getElementById('spec-origin').innerText = p.specs.origin;
 
                 // Inject Extended Info
                 const extendedContainer = document.getElementById('modal-extended');
