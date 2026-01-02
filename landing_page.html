@@ -247,7 +247,7 @@
                 transform: scale(1.3);
             }
 
-            /* Heartbeat Background */
+            /* Heartbeat Background
             .bg-heartbeat {
                 position: relative;
                 overflow: hidden;
@@ -270,14 +270,41 @@
             }
 
             @keyframes heartbeat {
-                0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
-                10% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-                25% { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
-                30% { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
-                40% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-                55% { transform: translate(-50%, -50%) scale(0.95); opacity: 0; }
-                100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
-            }
+                0% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                10% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                }
+
+                25% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                30% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                40% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                }
+
+                55% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translate(-50%, -50%) scale(0.9);
+                    opacity: 0;
+                }
+            } */
 
 
             /* Hero Carousel Transitions */
@@ -403,18 +430,6 @@
         </header>
 
 
-        <!-- Kickstarter Launch Section -->
-        <section class="py-12 bg-black/40 border-y border-white/10 relative z-10 bg-heartbeat">
-            <div class="max-w-4xl mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center gap-6">
-                <p class="text-lg md:text-xl text-text-muted">
-                    Launching on
-                </p>
-                <img src="assets/kickstarter_logo_2019.svg" alt="Kickstarter" class="h-5">
-                <p class="text-lg md:text-xl text-text-muted">
-                    February 2026
-                </p>
-            </div>
-        </section>
 
         <!-- Oepicus Club -->
         <section class="py-12 relative z-10 bg-brand-red/90 backdrop-blur-sm overflow-hidden mt-1">
@@ -422,8 +437,21 @@
             <div class="max-w-5xl mx-auto px-6 relative z-20 text-center">
                 <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">Oepicus Club</h2>
                 <p class="text-brand-gold font-bold uppercase tracking-widest text-xs md:text-sm mb-8">Exclusive Offers // Top Secret Information</p>
-                <p class="text-white/80 text-base md:text-lg mb-8 max-w-3xl mx-auto font-light">
-                    The Apollon Series launches on Kickstarter this February.
+                <div class="max-w-4xl mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                    <p class="text-white/80 text-lg md:text-xl">
+                        The Apollon Series launches on
+                    </p>
+                    <img src="assets/kickstarter_logo_2019.svg" alt="Kickstarter" class="h-5">
+                    <p class="text-white/80 text-lg md:text-xl">
+                        February 2026
+                    </p>
+                </div>
+
+                <!-- <p class="text-white/80 text-base md:text-lg mb-8 max-w-3xl mx-auto font-light">
+                     launches on Kickstarter this February.
+                    Join Oepicus Club to get pre-launch updates, early access, and exclusive offers before pledges go live.
+                </p> -->
+                <p class="text-white/80 text-base md:text-lg mb-8 max-w-3xl mx-auto">
                     Join Oepicus Club to get pre-launch updates, early access, and exclusive offers before pledges go live.
                 </p>
                 <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" data-form="subscribe">
@@ -441,6 +469,13 @@
                 <div class="response-message mt-3"></div>
 
             </div>
+
+            <!-- Kickstarter Launch Section -->
+            <!-- <section class="py-12 bg-black/40 border-y border-white/10 relative z-10 bg-heartbeat">
+                <div class="max-w-4xl mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                </div>
+            </section> -->
+
         </section>
 
         <!-- Stats Strip -->
@@ -480,7 +515,7 @@
         </div>
 
 
-<!--
+        <!--
                     <div class="border border-brand-gold/20 bg-black/40 p-6 md:p-8 rounded-lg relative overflow-hidden backdrop-blur-sm shadow-xl shadow-brand-gold/5">
                         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-gold to-brand-red"></div>
                         <div class="grid grid-cols-2 gap-6 md:gap-8">
