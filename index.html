@@ -1,11 +1,1502 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Redirecting...</title>
-    <!-- Redirect to another page immediately -->
-    <meta http-equiv="refresh" content="0; url=coming_soon.html" />
-</head>
-<body>
-    <p>If you are not redirected automatically, please follow this <a href="https://oepicus.com/landing_page.html">link to the new page</a>.</p>
-</body>
+<html lang="en" class="scroll-smooth">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <meta charset="UTF-8">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-4XV6K8C74B');
+        </script>
+
+        <!-- Meta Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '850477167883279');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=850477167883279&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- SEO -->
+        <title>OEPICUS | Future Audio Instruments</title>
+        <meta name="description" content="Oepicus crafts high-fidelity audio instruments for the modern musician. Precision-engineered guitar pedals and effects built in the USA, HKG, and PHL.">
+
+        <!-- Google Fonts: Red Rose -->
+        <script type="text/javascript" nonce="1c48c5ededcc4c7890ab72845df" src="//local.adguard.org?ts=1767012813994&amp;type=content-script&amp;dmn=c7.my-control-panel.com:2083&amp;url=https%3A%2F%2Fc7.my-control-panel.com%3A2083%2Fcpsess1970565562%2Fdownload%3Fskipencode%3D1%26file%3D%252fhome%252fechopal1%252flumeaeterna.com%252foepicus%252findex.html&amp;app=com.android.chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script>
+        <script type="text/javascript" nonce="1c48c5ededcc4c7890ab72845df" src="//local.adguard.org?ts=1767012813994&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
+        <script type="text/javascript" nonce="736bac14b6e7455c8681e06657f" src="//local.adguard.org?ts=1766952958265&amp;type=content-script&amp;dmn=c7.my-control-panel.com:2083&amp;url=https%3A%2F%2Fc7.my-control-panel.com%3A2083%2Fcpsess1826918911%2Fdownload%3Fskipencode%3D1%26file%3D%252fhome%252fechopal1%252flumeaeterna.com%252foepicus%252findex.html&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+        <script type="text/javascript" nonce="736bac14b6e7455c8681e06657f" src="//local.adguard.org?ts=1766952958265&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+        <!-- Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            void: '#050505',
+                            panel: '#121214',
+                            brand: {
+                                gold: '#C5A059',
+                                red: '#8A2525',
+                                dark: '#0A0A0A'
+                            },
+                            text: {
+                                main: '#ffffff',
+                                muted: '#94a3b8'
+                            }
+                        },
+                        fontFamily: {
+                            display: ['"Red Rose"', 'cursive'],
+                            sans: ['"Red Rose"', 'sans-serif'],
+                            ipa: ['"Noto Sans"', 'sans-serif']
+                        },
+                        animation: {
+                            'float': 'float 8s ease-in-out infinite',
+                            'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                            'spin-slow': 'spin 15s linear infinite',
+                            'glitch': 'glitch 1s linear infinite',
+                        },
+                        keyframes: {
+                            float: {
+                                '0%, 100%': { transform: 'translateY(0)' },
+                                '50%': { transform: 'translateY(-20px)' }
+                            },
+                            glitch: {
+                                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+                                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+                                '62%': { transform: 'translate(0,0) skew(5deg)' },
+                            }
+                        },
+                        screens: { 'xs': '475px' }
+                    }
+                }
+            }
+        </script>
+
+        <style>
+            /* Base */
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #050505;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #333;
+                border-radius: 3px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .glass {
+                background: rgba(255, 255, 255, 0.03);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            /* Updated Glass Heavy to be more transparent for cards */
+            .glass-heavy {
+                background: rgba(18, 18, 20, 0.7);
+                /* Reduced opacity from 0.95 */
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            /* New Utility for Product Cards */
+            .card-glass {
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .text-gradient {
+                background: linear-gradient(to right, #C5A059, #8A2525);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .fade-in-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            .fade-in-up.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .glitch-hover:hover {
+                animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+                color: #C5A059;
+            }
+
+            .safe-bottom {
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            /* SCANLINES */
+            .scanlines {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1));
+                background-size: 100% 4px;
+                pointer-events: none;
+                z-index: 5;
+                opacity: 0.3;
+            }
+
+            /* GOD RAYS */
+            .god-ray {
+                background: conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(197, 160, 89, 0.1) 60deg, transparent 120deg);
+                filter: blur(40px);
+            }
+
+            /* Grid Background for Map Effect */
+            .bg-grid {
+                background-size: 40px 40px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            }
+
+            .glow-text {
+                text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+            }
+
+            /* Custom scrollbar for modal content */
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: rgba(197, 160, 89, 0.3);
+                border-radius: 4px;
+            }
+
+            /* Carousel Styles */
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 0.5rem;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(4px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                /* Opacity removed to keep arrows visible automatically */
+                z-index: 30;
+            }
+
+            /* Removed hover-only visibility for better mobile UX */
+            .carousel-btn:hover {
+                background: rgba(197, 160, 89, 0.8);
+                border-color: rgba(197, 160, 89, 1);
+            }
+
+            .carousel-dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            .carousel-dot.active {
+                background: #C5A059;
+                transform: scale(1.3);
+            }
+
+            /* Heartbeat Background
+            .bg-heartbeat {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .bg-heartbeat::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 150%;
+                padding-bottom: 150%;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(138, 37, 37, 0.5) 0%, transparent 70%);
+                animation: heartbeat 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+                transform-origin: center;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+
+            @keyframes heartbeat {
+                0% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                10% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                }
+
+                25% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                30% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                40% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                }
+
+                55% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translate(-50%, -50%) scale(0.9);
+                    opacity: 0;
+                }
+            } */
+
+
+            /* Hero Carousel Transitions */
+            .hero-slide {
+                transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+                /* Initial state for non-active slides handled in HTML classes */
+            }
+        </style>
+    </head>
+
+    <body class="bg-void text-text-main font-sans antialiased selection:bg-brand-gold selection:text-brand-dark overflow-x-hidden relative">
+
+        <!-- CANVAS BACKGROUND (PARTICLES) -->
+        <canvas id="particle-canvas" class="fixed inset-0 z-0 pointer-events-none"></canvas>
+
+        <!-- SCANLINES OVERLAY -->
+        <div class="scanlines"></div>
+
+        <!-- Floating Navigation -->
+        <nav class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 w-full pointer-events-none">
+            <div class="pointer-events-auto glass rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center justify-between gap-4 md:gap-8 shadow-2xl shadow-black/50 transition-all duration-300 hover:border-brand-gold/30 w-full max-w-[90%] md:max-w-max bg-black/40">
+                <button class="md:hidden text-white hover:text-brand-gold transition-colors p-2" onclick="toggleMenu()">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+                <a href="#" class="flex items-center gap-2 group" onclick="window.scrollTo(0,0)">
+                    <img src="assets/Oepicus-Logo-RED-GOLD-NO-BG-1.png" alt="OEPICUS" class="h-14 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105 animate-pulse-slow">
+                </a>
+                <div class="hidden md:flex items-center gap-8 text-sm uppercase font-bold tracking-widest">
+                    <a href="#philosophy" class="hover:text-brand-gold transition-colors">Origins</a>
+                    <a href="#products" class="hover:text-brand-gold transition-colors">Instruments</a>
+                    <a href="#contact" class="hover:text-brand-gold transition-colors">Connect</a>
+                    <a href="#faq" class="hover:text-brand-gold transition-colors">Support</a>
+                </div>
+                <!-- Cart Button Hidden/Modified as per request to focus on pledging, but keeping DOM structure for now, made invisible or changed interaction -->
+                <button class="relative p-2 hover:bg-white/10 rounded-full transition-colors group hidden" onclick="toggleCart()">
+                    <i data-lucide="shopping-bag" class="w-5 h-5 group-hover:text-brand-gold transition-colors"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-black/90 z-40 transform -translate-y-full transition-transform duration-500 flex flex-col justify-center items-center gap-8 backdrop-blur-xl">
+            <button class="absolute top-8 right-8 text-white/50 hover:text-white p-4" onclick="toggleMenu()">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <a href="#philosophy" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">ORIGINS</a>
+            <a href="#products" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">INSTRUMENTS</a>
+            <a href="#contact" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">CONNECT</a>
+            <a href="#faq" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">SUPPORT</a>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="relative flex justify-center pt-48 md:pt-56 pb-24 md:pb-32 px-6 z-10">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
+
+                <!-- Hero Text -->
+                <div class="space-y-6 md:space-y-8 fade-in-up text-center lg:text-left z-20">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-bold tracking-[0.3em] uppercase text-brand-gold mx-auto lg:mx-0">
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                        Systems Online
+                    </div>
+                    <!-- UPDATED SIZE: Significantly reduced to text-2xl/3xl/5xl to ensure single-line display -->
+                    <h1 class="text-2xl sm:text-3xl md:text-5xl font-display font-bold leading-[0.9] tracking-tight">
+                        <span class="whitespace-nowrap">FOLLOW YOUR TONE.</span><br>
+                        <span class="text-gradient glitch-hover cursor-default whitespace-nowrap">SHAPE YOUR BLISS.</span>
+                    </h1>
+                    <p class="text-base md:text-lg text-text-muted max-w-md mx-auto lg:mx-0 leading-relaxed">
+                        For those who believe sound deserves attention.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                        <a href="#products" class="px-8 py-4 bg-brand-gold text-brand-dark font-bold rounded-sm hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 tracking-widest uppercase text-sm">
+                            Browse Collection
+                        </a>
+                        <button onclick="document.getElementById('video-modal').classList.remove('hidden')" class="px-8 py-4 border border-white/20 rounded-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2 text-white tracking-widest uppercase text-sm group">
+                            <i data-lucide="play-circle" class="w-4 h-4 group-hover:text-brand-gold transition-colors"></i> Watch Film
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hero Visual (Animated) -->
+                <div class="relative h-[300px] sm:h-[400px] md:h-[600px] flex items-center justify-center fade-in-up mt-8 lg:mt-0 z-10" style="transition-delay: 200ms;">
+                    <!-- Animated God Ray Spotlight -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-[120%] h-[120%] god-ray animate-spin-slow opacity-30"></div>
+                    </div>
+
+                    <!-- Glowing Core with Rotating Images -->
+                    <div class="relative w-full h-full animate-float">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold/20 to-brand-red/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow"></div>
+
+                        <!-- 1. Pyr 1 -->
+                        <img src="assets/Pyr1.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-100 scale-100 blur-0" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Pyr Front" loading="eager">
+
+                        <!-- 2. Pyr 2 -->
+                        <img src="assets/Pyr2.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Pyr Angle" loading="eager">
+
+                        <!-- 3. Tyrus 1 -->
+                        <img src="assets/Tyrus1.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Tyrus Front" loading="eager">
+
+                        <!-- 4. Tyrus 2 -->
+                        <img src="assets/Tyrus2.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Tyrus Angle" loading="eager">
+
+                        <!-- 5. Eclipse 1 -->
+                        <img src="assets/Eclipse1.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Eclipse Front" loading="eager">
+
+                        <!-- 6. Eclipse 2 -->
+                        <img src="assets/Eclipse2.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Eclipse Angle" loading="eager">
+
+                        <!-- 7. Aeon 1 -->
+                        <img src="assets/Aeon1.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Aeon Front" loading="eager">
+
+                        <!-- 8. Aeon 2 -->
+                        <img src="assets/Aeon2.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Aeon Angle" loading="eager">
+
+                        <!-- 9. Maelstrom 2 -->
+                        <img src="assets/Maelstrom2.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Maelstrom Angle" loading="eager">
+
+                        <!-- 10. Maelstrom 1 -->
+                        <img src="assets/Maelstrom1.png" class="hero-slide absolute inset-0 w-full h-full object-contain z-10 drop-shadow-[0_0_50px_rgba(197,160,89,0.2)] mask-image-gradient p-4 opacity-0 scale-95 blur-sm" style="mask-image: linear-gradient(black 80%, transparent 100%);" alt="Maelstrom Front" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Oepicus Club -->
+        <section class="py-12 relative z-10 bg-brand-red/90 backdrop-blur-sm overflow-hidden mt-1">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/80 to-transparent"></div>
+            <div class="max-w-5xl mx-auto px-6 relative z-20 text-center">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">Oepicus Club</h2>
+                <p class="text-brand-gold font-bold uppercase tracking-widest text-xs md:text-sm mb-8">Exclusive Offers // Top Secret Information</p>
+                <div class="max-w-4xl mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                    <p class="text-white/80 text-lg md:text-xl">
+                        The Apollon Series launches on
+                    </p>
+                    <img src="assets/kickstarter_logo_2019.svg" alt="Kickstarter" class="h-5">
+                    <p class="text-white/80 text-lg md:text-xl">
+                        February 2026
+                    </p>
+                </div>
+
+                <!-- <p class="text-white/80 text-base md:text-lg mb-8 max-w-3xl mx-auto font-light">
+                     launches on Kickstarter this February.
+                    Join Oepicus Club to get pre-launch updates, early access, and exclusive offers before pledges go live.
+                </p> -->
+                <p class="text-white/80 text-base md:text-lg mb-8 max-w-3xl mx-auto">
+                    Join Oepicus Club to get pre-launch updates, early access, and exclusive offers before pledges go live.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" data-form="subscribe">
+                    <div class="relative flex-1">
+                        <i data-lucide="mail" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4"></i>
+                        <input type="email" name="email" placeholder="ENTER EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
+                    </div>
+                    <!-- Hidden field for tags -->
+                    <input type="hidden" name="tags" value="oepicus_landing_page">
+
+                    <button type="submit" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors rounded-sm h-14 flex items-center justify-center gap-2 text-xs">
+                        GRAB UPDATES <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </form>
+                <div class="response-message mt-3"></div>
+
+            </div>
+
+            <!-- Kickstarter Launch Section -->
+            <!-- <section class="py-12 bg-black/40 border-y border-white/10 relative z-10 bg-heartbeat">
+                <div class="max-w-4xl mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center gap-6">
+                </div>
+            </section> -->
+
+        </section>
+
+        <!-- Stats Strip -->
+        <div class="border-y border-white/10 bg-black/60 backdrop-blur-xl z-10 relative">
+            <div class="max-w-7xl mx-auto px-6 py-10 md:py-16 flex flex-col md:flex-row justify-center md:justify-around items-center gap-10 md:gap-8">
+                <!-- Item 1 -->
+                <div class="flex flex-col items-center text-center group cursor-default">
+                    <div class="p-4 rounded-full bg-brand-gold/5 border border-brand-gold/10 group-hover:bg-brand-gold/20 group-hover:border-brand-gold/30 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.1)] group-hover:shadow-[0_0_25px_rgba(197,160,89,0.3)]">
+                        <i data-lucide="shield-check" class="text-brand-gold w-8 h-8 md:w-10 md:h-10"></i>
+                    </div>
+                    <h3 class="text-white font-display font-bold tracking-widest text-lg md:text-xl mb-1 uppercase">Built To Last (Realistically)</h3>
+                    <p class="text-text-muted text-xs md:text-sm font-light tracking-wider max-w-xs">Lifetime Warranty — nothing lasts forever, just cover the shipping</p>
+                </div>
+
+                <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col items-center text-center group cursor-default">
+                    <div class="p-4 rounded-full bg-brand-gold/5 border border-brand-gold/10 group-hover:bg-brand-gold/20 group-hover:border-brand-gold/30 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.1)] group-hover:shadow-[0_0_25px_rgba(197,160,89,0.3)]">
+                        <i data-lucide="cpu" class="text-brand-gold w-8 h-8 md:w-10 md:h-10"></i>
+                    </div>
+                    <h3 class="text-white font-display font-bold tracking-widest text-lg md:text-xl mb-1 uppercase">Precision by Design</h3>
+                    <p class="text-text-muted text-xs md:text-sm font-light tracking-wider">In-House SMT Manufacturing</p>
+                </div>
+
+                <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
+
+                <!-- Item 3 -->
+                <div class="flex flex-col items-center text-center group cursor-default">
+                    <div class="p-4 rounded-full bg-brand-gold/5 border border-brand-gold/10 group-hover:bg-brand-gold/20 group-hover:border-brand-gold/30 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.1)] group-hover:shadow-[0_0_25px_rgba(197,160,89,0.3)]">
+                        <i data-lucide="globe" class="text-brand-gold w-8 h-8 md:w-10 md:h-10"></i>
+                    </div>
+                    <h3 class="text-white font-display font-bold tracking-widest text-lg md:text-xl mb-1 uppercase">Built in Epic Surroundings</h3>
+                    <p class="text-text-muted text-xs md:text-sm font-light tracking-wider">Global Distribution Ready</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+                    <div class="border border-brand-gold/20 bg-black/40 p-6 md:p-8 rounded-lg relative overflow-hidden backdrop-blur-sm shadow-xl shadow-brand-gold/5">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-gold to-brand-red"></div>
+                        <div class="grid grid-cols-2 gap-6 md:gap-8">
+                            <div class="col-span-2 pb-4 border-b border-white/10">
+                                <p class="text-[10px] uppercase tracking-widest text-brand-gold mb-1 flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-3 h-3"></i> Base of Operations
+                                </p>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-xl md:text-2xl font-display font-bold text-white tracking-tight">USA <span class="text-brand-gold">///</span> HKG <span class="text-brand-gold">///</span> PHL</p>
+                                    <p class="text-[10px] text-gray-500 font-mono">GLOBAL OPERATIONS NETWORK</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-widest text-brand-gold mb-1">Combined Exp.</p>
+                                <p class="text-3xl md:text-4xl font-display font-bold text-white">30+ <span class="text-sm text-gray-500">YRS</span></p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-widest text-brand-gold mb-1">Method</p>
+                                <p class="text-3xl md:text-4xl font-display font-bold text-white">SMT <span class="text-sm text-gray-500">LAB</span></p>
+                            </div>
+                        </div>
+                    </div>
+                -->
+        <!-- Philosophy / Origins Section -->
+        <section id="philosophy" class="py-24 md:py-32 px-6 relative z-10 border-b border-white/5 overflow-hidden">
+            <!-- Removed solid bg-panel, made transparent for particles -->
+            <div class="absolute inset-0 bg-gradient-to-t from-panel/50 via-transparent to-panel/50 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center relative z-20">
+                <div class="fade-in-up order-2 md:order-1">
+                    <!-- Data Card: Made transparent -->
+                    <div class="border border-brand-gold/20 bg-black/40 p-6 md:p-8 rounded-lg relative overflow-hidden backdrop-blur-sm shadow-xl shadow-brand-gold/5 space-y-6">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-gold to-brand-red"></div>
+
+                        <!-- Opus -->
+                        <div class="pb-4 border-b border-white/10">
+                            <p class="text-xl md:text-2xl font-display font-bold text-white tracking-tight">o·pus <span class="text-sm text-gray-400 font-sans">/ˈōpəs/</span></p>
+                            <p class="text-sm text-text-muted mt-2">An opus is a created work, usually musical in nature. The
+                                composer’s greatest opus was inspired by the blooming of the spring flowers.</p>
+                        </div>
+
+                        <!-- Epic -->
+                        <div class="pb-4 border-b border-white/10">
+                            <p class="text-xl md:text-2xl font-display font-bold text-white tracking-tight">ep·ic <span class="text-sm text-gray-400 font-sans">/ˈepik/</span></p>
+                            <p class="text-sm text-text-muted mt-2">An epic is a long book, poem, or film, whose story extends over a
+                                long period of time or tells of great events.</p>
+                        </div>
+
+                        <!-- Oepicus -->
+                        <div>
+                            <p class="text-xl md:text-2xl font-display font-bold text-white tracking-tight">oe·pi·cus <span class="text-sm text-gray-400 font-sans">/ˈōpɪkəs/</span></p>
+                            <p class="text-sm text-text-muted mt-2">The practice of applying epic craft and technology to sound, with
+                                human warmth, artistic intent, and just enough absurdity to keep it enjoyable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in-up order-1 md:order-2">
+                    <h2 class="text-xs font-bold text-brand-gold tracking-[0.3em] uppercase mb-4 md:mb-6">Origins</h2>
+                    <h3 class="text-3xl md:text-5xl font-display font-medium leading-tight text-white mb-6">
+                        Why Oepicus Exists
+                    </h3>
+                    <div class="text-text-muted leading-relaxed space-y-6 text-sm md:text-base">
+                        <p>
+                            Oepicus began with a feeling, which is rarely a sensible way to start a company, but often the only way to start something worth doing.
+                        </p>
+                        <p>
+                            Our name is built from Opus, a great work, and Epic, something larger than yourself. It reflects the kind of work we admire: stuff crafted with care, shaped by effort, and meant to endure&mdash;whether that's a piece of music, a timeless story, or a sunrise that briefly convinces you everything is fine.
+                        </p>
+                        <p>
+                            We've spent years playing, building, breaking, and rebuilding gear, and along the way realised we weren't just chasing sound&mdash;we were chasing the satisfaction of shaping it properly. Instruments, we believe, should reward attention rather than shortcuts.
+                        </p>
+                        <p>
+                            We started with pedals because they sit at a curious crossroads: immediate yet deep. But these are not straightforward guitar pedals. Oepicus instruments bring synthesis-level ideas&mdash;dynamic control, CV integration, expressive interaction&mdash;into the hands of guitarists, synth players, and modular explorers alike.
+                        </p>
+                        <p>
+                            Built by designers and engineers with over 30 years of combined experience, every Oepicus instrument is produced using professional assembly and in-house SMT manufacturing to ensure consistency and reliability. Each unit behaves exactly as intended. Any chaos is entirely your own.
+                        </p>
+                        <p class="font-bold text-white mt-4">
+                            Oepicus exists to celebrate the beautiful act of making sound&mdash;<br>
+                            for those who see music not just as output, but as blissful work.<br>
+                            An opus.<br>
+                            Made epic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Apollon Series -->
+        <section class="py-24 md:py-32 px-6 relative z-10 border-b border-white/5">
+            <div class="max-w-4xl mx-auto text-center md:text-left fade-in-up">
+                <h2 class="text-xs font-bold text-brand-gold tracking-[0.3em] uppercase mb-4 md:mb-6">The Apollon Series</h2>
+                <h3 class="text-3xl md:text-5xl font-display font-medium leading-tight text-white mb-6">How Apollo Got Involved</h3>
+                <div class="text-text-muted leading-relaxed space-y-6 text-sm md:text-base">
+                    <p>The idea for the Apollon Series arrived, as many questionable yet productive ideas do, during a holiday in Greece. No drugs were involved in its creation&mdash;though there may have been far too much coffee. Details remain unclear.</p>
+                    <p>Surrounded by ancient stones, relentless sunlight, and the lingering sense that the gods never really left, we found ourselves thinking about Apollo&mdash;not the polite statue version, but the complicated one. God of music, light, order, prophecy, and the occasional divine overreaction. It became obvious that his many domains mapped rather neatly onto how modern musicians actually work: shifting between instruments, roles, and states of mind, often mid-song.</p>
+                    <p>From that moment came the Radiant Instruments of Apollo&mdash;a family of pedals, each embodying one of his attributes. Not recreations or relics, but modern instruments designed to move fluidly between guitar, synth, and modular worlds. Mythic in spirit, practical in use, and very much alive.</p>
+                    <p>We began with four pedals. Each stands on its own. Together, they form something greater&mdash;at which point we fully expect fireworks, shenanigans, and possibly mild celestial commentary.</p>
+                    <p class="font-bold text-white">Apollo, after all, was never known for subtlety.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Technicalities -->
+        <section class="py-24 md:py-32 px-6 relative z-10 border-b border-white/5 bg-white/5">
+            <div class="max-w-4xl mx-auto text-center md:text-left fade-in-up">
+                <h2 class="text-xs font-bold text-brand-gold tracking-[0.3em] uppercase mb-4 md:mb-6">The Technicalities</h2>
+                <h3 class="text-3xl md:text-5xl font-display font-medium leading-tight text-white mb-2">How the Instruments Actually Work</h3>
+                <p class="text-xl md:text-2xl font-display text-white/70 mb-8">(Yes, They're Pedals. Yes, They're for Guitarists...and Others)</p>
+
+                <div class="text-text-muted leading-relaxed space-y-6 text-sm md:text-base">
+                    <p>At first glance, Oepicus instruments look like pedals&mdash;because they are. They live on pedalboards, they respond beautifully to pickups, and they're designed to be played with guitars at the center of the experience. If you're a guitar player, you're very much at home here.</p>
+                    <p>Where things begin to differ is in how these pedals invite you to interact with them. They're built around expression first. Dynamics matter. Touch matters. Timing matters. Pick attack, volume control, and playing nuance all shape the response in ways that reward attention rather than flatten it.</p>
+                    <p>Crucially, control doesn't stop at your hands&mdash;or even your guitar. CV inputs and outputs aren't decorative extras; they extend what guitar pedals can do, allowing these instruments to speak fluently with synths, modular systems, and other sound tools. This opens the door to collaboration and experimentation, bringing guitarists into the wider world of expressive electronic sound without asking them to leave their instrument behind.</p>
+                    <p>Under the hood, professional assembly and in-house SMT manufacturing ensure consistency and reliability. Every pedal behaves exactly the same on paper. What happens in practice depends entirely on how you play&mdash;and how far you choose to explore.</p>
+                    <p>Oepicus instruments aren't about presets, menus, or automation. They're about playing. About treating pedals not just as effects, but as instruments in their own right&mdash;made to be touched, explored, and occasionally surprised by.</p>
+                    <p class="font-bold text-white mt-8 text-lg">
+                        They're guitar pedals.<br>
+                        They just don't believe the guitar should be the only voice in the room.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Behind Section -->
+        <section id="whats-behind" class="py-24 md:py-32 px-6 relative z-10 border-b border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                <div class="fade-in-up">
+                    <h2 class="text-3xl md:text-5xl font-display font-medium leading-tight text-white mb-6">
+                        What's Behind All This?
+                    </h2>
+                    <div class="text-text-muted leading-relaxed space-y-6 text-sm md:text-base">
+                        <p>
+                            Yes, your eyes do not deceive you—those are CV inputs. While our instruments speak fluent Eurorack, you don't need a modular synth to explore their potential.
+                        </p>
+                        <p>
+                            Some pedals generate control voltage, while others listen for it. This means you can patch one pedal into another, creating complex interactions without a single module in sight.
+                        </p>
+                        <p class="font-bold text-white">
+                            Or, for a touch of beautiful chaos, you can even patch a pedal into itself.
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in-up order-first md:order-last flex justify-center">
+                    <img src="assets/whats_behind.png" alt="Rear view of an Oepicus pedal showing CV inputs" class="max-w-full h-auto rounded-lg shadow-2xl shadow-black/50">
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-24 md:py-32 px-4 md:px-6 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8 fade-in-up">
+                    <div class="w-full md:w-auto">
+                        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">The Instruments</h2>
+                        <p class="text-text-muted max-w-lg text-sm md:text-base">And now, a breakdown of what each instrument can do...</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 w-full md:w-auto">
+                        <button onclick="renderProducts('all')" class="filter-btn active flex-1 md:flex-none text-center px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-void transition-all bg-white text-void">All</button>
+                        <button onclick="renderProducts('Fuzz')" class="filter-btn flex-1 md:flex-none text-center px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-void transition-all text-text-muted">Fuzz</button>
+                        <button onclick="renderProducts('Modulation')" class="filter-btn flex-1 md:flex-none text-center px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-void transition-all text-text-muted">Modulation</button>
+                        <button onclick="renderProducts('Time')" class="filter-btn flex-1 md:flex-none text-center px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-void transition-all text-text-muted">Time</button>
+                    </div>
+                </div>
+                <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="faq" class="py-24 md:py-32 px-6 relative z-10">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-display font-bold mb-12 fade-in-up">FAQ</h2>
+                <div class="space-y-4 fade-in-up delay-100">
+                    <!-- Using glass class which is transparent -->
+                    <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <span class="font-medium text-lg text-white">1. Are these guitar pedals?</span>
+                            <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                        </button>
+                        <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
+                            <div class="p-6 pt-0 text-text-muted text-sm md:text-base">
+                                Yes&mdash;they are very much pedals, designed to live on a pedalboard and respond deeply to guitars. But they're not the kind of pedals you switch on and forget about. They're built to invite interaction, attention, and a bit of exploration.<br><br>
+                                You can plug straight in and start playing, but the real character reveals itself as you engage with dynamics, controls, and signal flow. And when curiosity strikes, these same pedals are perfectly happy to accept synths, modular systems, and other sound sources. CV integration and extended control simply mean they're not only for guitarists.<br><br>
+                                Think of them as pedals that reward playing&mdash;and occasionally encourage you to try something you hadn't planned.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <span class="font-medium text-lg text-white">2. What's the Warranty situation?</span>
+                            <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                        </button>
+                        <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
+                            <div class="p-6 pt-0 text-text-muted text-sm md:text-base">
+                                We build Oepicus instruments to last, and we stand behind them accordingly. Our warranty is deliberately simple and refreshingly honest: if something fails due to manufacturing or component issues, we'll repair it.<br><br>
+                                We offer a lifetime warranty&mdash;within your lifetime and the pedal's, whichever decides to bow out first. Nothing lasts forever, especially devices that get stomped on, toured hard, or subjected to experimental signal chains at 2 a.m. We'll handle the fix; you just cover the shipping.<br><br>
+                                Built to last.<br>
+                                Realistically.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <span class="font-medium text-lg text-white">3. Do I need modular or CV experience to use these?</span>
+                            <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                        </button>
+                        <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
+                            <div class="p-6 pt-0 text-text-muted text-sm md:text-base">Not at all. Each instrument works perfectly well on its own. CV inputs are there to expand what's possible, not to demand prior study. You can ignore them entirely, or explore them later when curiosity (or confidence) strikes.</div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <span class="font-medium text-lg text-white">4. When will the instruments ship?</span>
+                            <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                        </button>
+                        <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
+                            <div class="p-6 pt-0 text-text-muted text-sm md:text-base">If the campaign is successfully funded, production will begin shortly after. We estimate shipping to backers 3&ndash;4 months after the campaign ends, and we'll provide regular updates so you'll know exactly what's happening&mdash;and why&mdash;along the way.</div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
+                            <span class="font-medium text-lg text-white">5. Have you delivered a Kickstarter project before?</span>
+                            <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                        </button>
+                        <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
+                            <div class="p-6 pt-0 text-text-muted text-sm md:text-base">Yes. Our parent company, 1V/OCT, successfully launched and delivered The Centre: Eurorack Modular Wavetable Synthesiser on Kickstarter in 2021. We've taken complex audio hardware from concept to backers' hands before, and we fully intend to do it again.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-24 md:py-32 px-6 relative z-10 border-t border-white/5 bg-black/30 space-y-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 fade-in-up">Connect With Us</h2>
+                <p class="text-text-muted mb-12 fade-in-up max-w-2xl mx-auto">Have questions or just want to talk shop? Join our community channels to connect directly with the team and other musicians.</p>
+
+                <div class="grid md:grid-cols-3 gap-8 md:gap-12 fade-in-up" style="transition-delay: 100ms;">
+                    <!-- Discord -->
+                    <a href="https://discord.gg/5ygA5QJuar" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
+                        <img src="assets/discord_qr.svg" alt="Discord QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
+                        <div class="text-center">
+                            <h3 class="text-xl font-display font-bold text-white mb-2">Talk to us on Discord</h3>
+                            <p class="text-text-muted text-sm mb-4">The main hub for community discussion, support, and sneak peeks.</p>
+                            <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
+                                Join Server <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Group -->
+                    <a href="https://chat.whatsapp.com/FT1yjd0W5Pl7VW3VLkV0Xr" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
+                        <img src="assets/whatsapp_qr.svg" alt="WhatsApp QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
+                        <div class="text-center">
+                            <h3 class="text-xl font-display font-bold text-white mb-2">Group Chat on WhatsApp</h3>
+                            <p class="text-text-muted text-sm mb-4">For general discussion and quick questions with the community.</p>
+                            <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
+                                Join Chat <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Channel -->
+                    <a href="https://whatsapp.com/channel/0029Vb7OoBPHgZWhOOVVlp3u" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
+                        <img src="assets/whatsapp_channel_qr.svg" alt="WhatsApp Channel QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
+                        <div class="text-center">
+                            <h3 class="text-xl font-display font-bold text-white mb-2">Updates on WhatsApp</h3>
+                            <p class="text-text-muted text-sm mb-4">A broadcast-only channel for the latest news and announcements.</p>
+                            <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
+                                Follow Channel <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-lg mx-auto text-center fade-in-up">
+                <h3 class="text-2xl font-display font-bold mb-4">Subscribe to Newsletter</h3>
+                <p class="text-text-muted mb-8 text-sm">Get the latest signals from Oepicus, including product announcements, articles, and exclusive offers.</p>
+                <form class="flex flex-col sm:flex-row gap-4" data-form="subscribe">
+                    <div class="relative flex-1">
+                        <i data-lucide="mail" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4"></i>
+                        <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
+                    </div>
+                    <!-- Hidden field for tags -->
+                    <input type="hidden" name="tags" value="oepicus_landing_page_footer">
+
+                    <button type="submit" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors rounded-sm h-14 flex items-center justify-center gap-2 text-xs">
+                        Subscribe <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </form>
+                <div class="response-message mt-3"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 px-6 border-t border-white/5 bg-panel/30 backdrop-blur-md z-10 relative">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+                <!-- Left Side: Logo & Copyright -->
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <img src="assets/Oepicus-Logo-RED-GOLD-NO-BG-1.png" alt="OEPICUS" class="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">
+                    <div class="h-px w-8 bg-white/10 md:h-8 md:w-px md:bg-white/10"></div>
+                    <div class="text-text-muted text-xs uppercase tracking-widest">&copy; 2025 Oepicus Audio Research.</div>
+                </div>
+
+                <!-- Right Side: Community & Socials -->
+                <div class="flex flex-col items-center gap-4">
+                    <span class="text-xs font-bold text-brand-gold uppercase tracking-[0.3em] glow-text">Community</span>
+                    <div class="flex gap-6">
+                        <a href="https://www.instagram.com/oepicus" class="text-white/30 hover:text-brand-gold transition-all duration-300 transform hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-5 h-5 stroke-[1.5]"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61584611603188" class="text-white/30 hover:text-brand-gold transition-all duration-300 transform hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5 stroke-[1.5]"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Oepicus" class="text-white/30 hover:text-brand-gold transition-all duration-300 transform hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" aria-label="YouTube">
+                            <i data-lucide="youtube" class="w-5 h-5 stroke-[1.5]"></i>
+                        </a>
+                        <a href="#" class="text-white/30 hover:text-brand-gold transition-all duration-300 transform hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" aria-label="Discord">
+                            <i data-lucide="gamepad-2" class="w-5 h-5 stroke-[1.5]"></i>
+                        </a>
+                        <a href="#" class="text-white/30 hover:text-brand-gold transition-all duration-300 transform hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5 stroke-[1.5]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cart Drawer (Kept in DOM but disabled usage) -->
+        <div id="cart-drawer" class="fixed inset-0 z-[80] hidden pointer-events-none">
+            <div class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity opacity-0 pointer-events-auto" onclick="toggleCart()" id="cart-backdrop"></div>
+            <div class="absolute right-0 top-0 h-full w-full sm:max-w-md glass-heavy shadow-2xl transform translate-x-full transition-transform duration-500 ease-out pointer-events-auto flex flex-col border-l border-brand-gold/10" id="cart-panel">
+                <div class="p-6 border-b border-white/10 flex justify-between items-center">
+                    <h2 class="font-display text-2xl font-bold text-white">Cart</h2>
+                    <button onclick="toggleCart()" class="text-text-muted hover:text-white transition-colors p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
+                </div>
+                <div class="flex-1 flex flex-col justify-center items-center text-center p-8 space-y-6">
+                    <div class="w-20 h-20 rounded-full bg-brand-gold/10 flex items-center justify-center mb-4 border border-brand-gold/20"><i data-lucide="shopping-bag" class="w-8 h-8 text-brand-gold"></i></div>
+                    <h3 class="text-xl font-medium text-white">Store Offline</h3>
+                    <p class="text-text-muted max-w-xs text-sm">The commerce engine is currently in diagnostic mode. Sign up for launch notifications.</p>
+                    <div class="w-full pt-8 border-t border-white/10 mt-4">
+                        <button class="w-full py-4 bg-white/5 text-white/30 font-bold rounded cursor-not-allowed uppercase tracking-widest text-xs border border-white/5">Checkout Disabled</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Detail Modal -->
+        <div id="product-modal" class="fixed inset-0 z-[90] hidden flex items-end md:items-center justify-center px-0 md:px-4 pb-0 md:pb-4">
+            <div class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300" onclick="closeProductModal()"></div>
+            <div class="relative w-full md:max-w-5xl glass-heavy md:rounded-2xl rounded-t-2xl shadow-2xl overflow-hidden flex flex-col md:grid md:grid-cols-2 opacity-0 translate-y-20 md:scale-95 transition-all duration-300 transform h-[92vh] md:h-[85vh]" id="modal-card">
+                <button onclick="closeProductModal()" class="absolute top-4 right-4 z-50 bg-black/50 p-2 rounded-full text-white hover:text-brand-gold backdrop-blur-md"><i data-lucide="x" class="w-6 h-6"></i></button>
+
+                <!-- Modal Image Side with Carousel -->
+                <div class="bg-gradient-to-br from-black/60 to-transparent p-6 md:p-12 flex items-center justify-center relative h-[35%] md:h-auto shrink-0 border-b border-white/5 md:border-b-0 md:border-r carousel-container group" id="modal-image-container">
+                    <div class="absolute top-4 left-4 z-10"><span class="px-3 py-1 rounded-full border border-white/10 bg-black/40 text-[10px] uppercase tracking-widest text-brand-gold font-bold" id="modal-category">Fuzz</span></div>
+
+                    <!-- Main Image -->
+                    <img id="modal-img" src="" class="h-full w-auto max-h-[180px] md:max-h-[400px] object-contain drop-shadow-2xl z-10 transition-transform duration-700 hover:scale-105" onerror="this.src='https://placehold.co/400x400/121214/C5A059?text=CONCEPT'">
+                    <div class="absolute inset-0 bg-brand-gold/5 rounded-full filter blur-3xl scale-75"></div>
+
+                    <!-- Carousel Navigation -->
+                    <button id="prev-btn" class="carousel-btn left-4 hidden" onclick="prevSlide()"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+                    <button id="next-btn" class="carousel-btn right-4 hidden" onclick="nextSlide()"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+
+                    <!-- Dots -->
+                    <div id="carousel-dots" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-20"></div>
+                </div>
+
+                <!-- Modal Content Side -->
+                <div class="flex flex-col h-full relative overflow-hidden bg-black/80 md:bg-transparent">
+                    <!-- Scrollable Container -->
+                    <div class="flex-1 overflow-y-auto p-6 md:p-12 custom-scrollbar">
+                        <div class="mb-2">
+                            <h2 class="text-3xl md:text-4xl font-display font-bold text-white" id="modal-title">Title</h2>
+                        </div>
+                        <p class="text-brand-gold text-xs md:text-sm font-bold uppercase tracking-widest mb-6" id="modal-subtitle">Subtitle</p>
+                        <p class="text-text-muted leading-relaxed mb-8 text-sm md:text-base font-light" id="modal-desc">Description...</p>
+
+                        <div class="mb-6">
+                            <p class="text-[10px] uppercase text-text-muted tracking-widest mb-2 font-bold">Core Character</p>
+                            <ul id="modal-features" class="grid grid-cols-1 gap-2 text-sm text-white/90"></ul>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8 bg-white/5 p-4 md:p-6 rounded-xl border border-white/5">
+                            <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Bypass</span><span class="text-xs md:text-sm font-bold text-white" id="spec-bypass">True</span></div>
+                            <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Power</span><span class="text-xs md:text-sm font-bold text-white" id="spec-power">9V</span></div>
+                            <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Draw</span><span class="text-xs md:text-sm font-bold text-white" id="spec-draw">15mA</span></div>
+                            <div><span class="text-[10px] uppercase text-text-muted block mb-1 tracking-wider">Origin</span><span class="text-xs md:text-sm font-bold text-white" id="spec-origin">Nobody Knows</span></div>
+                        </div>
+
+                        <!-- Extended Info Section (Dynamically Injected) -->
+                        <div id="modal-extended" class="space-y-6 text-sm text-text-muted leading-relaxed pb-4">
+                            <!-- Extended content goes here -->
+                        </div>
+                    </div>
+
+                    <!-- Fixed Footer -->
+                    <div class="p-6 md:px-12 md:py-8 border-t border-white/10 bg-black/90 md:bg-black/60 backdrop-blur-md z-20 shrink-0">
+                        <!-- <div class="flex gap-4 items-center">
+                            <button onclick="window.open('https://www.kickstarter.com/', '_blank')" class="flex-1 bg-brand-gold hover:bg-white text-brand-dark font-bold py-4 rounded-sm transition-all shadow-lg shadow-brand-gold/20 uppercase tracking-widest text-xs md:text-sm flex items-center justify-center gap-2">
+                                Pledge Now <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Modal -->
+        <div id="video-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/95 backdrop-blur px-4" onclick="this.classList.add('hidden')">
+            <div class="text-center">
+                <i data-lucide="film" class="w-12 h-12 md:w-16 md:h-16 text-white/20 mx-auto mb-4"></i>
+                <p class="text-lg md:text-xl text-white font-display">Brand Film Coming Soon</p>
+                <p class="text-text-muted text-xs md:text-sm mt-2">Tap anywhere to close</p>
+            </div>
+        </div>
+
+        <!-- Consent Banner -->
+        <div id="consent-banner" class="fixed bottom-0 left-0 right-0 bg-panel/80 backdrop-blur-md z-[100] p-4 border-t border-white/10 hidden">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+                <p class="text-sm text-text-muted">
+                    We use cookies to analyze site traffic. By clicking "Accept", you agree to our use of cookies for this purpose.
+                </p>
+                <div class="flex gap-4 shrink-0">
+                    <button id="consent-accept" class="px-6 py-2 bg-brand-gold text-brand-dark font-bold rounded-sm hover:bg-white transition-colors text-xs uppercase tracking-widest">Accept</button>
+                    <button id="consent-decline" class="px-6 py-2 border border-white/20 rounded-sm hover:bg-white/5 transition-colors text-xs uppercase tracking-widest">Decline</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // --- ANIMATION ENGINE: VOID PARTICLES ---
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.5;
+                    this.vy = (Math.random() - 0.5) * 0.5;
+                    this.size = Math.random() * 3 + 1;
+                    this.alpha = Math.random() * 0.5 + 0.3;
+                    this.color = Math.random() > 0.5 ? '197, 160, 89' : '138, 37, 37';
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0) this.x = width;
+                    if (this.x > width) this.x = 0;
+                    if (this.y < 0) this.y = height;
+                    if (this.y > height) this.y = 0;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${this.color}, ${this.alpha})`;
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                particles = [];
+                const count = Math.min(window.innerWidth / 8, 200);
+                for (let i = 0; i < count; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+                requestAnimationFrame(animateParticles);
+            }
+
+            window.addEventListener('resize', () => { resize(); initParticles(); });
+            resize();
+            initParticles();
+            animateParticles();
+
+            // --- HERO CAROUSEL LOGIC ---
+            function initHeroCarousel() {
+                const slides = document.querySelectorAll('.hero-slide');
+                if (slides.length === 0) return;
+
+                let current = 0;
+
+                // Start rotation loop
+                setInterval(() => {
+                    // Morph out current
+                    slides[current].classList.remove('opacity-100', 'scale-100', 'blur-0');
+                    slides[current].classList.add('opacity-0', 'scale-95', 'blur-sm');
+
+                    // Advance index
+                    current = (current + 1) % slides.length;
+
+                    // Morph in next
+                    slides[current].classList.remove('opacity-0', 'scale-95', 'blur-sm');
+                    slides[current].classList.add('opacity-100', 'scale-100', 'blur-0');
+                }, 3000); // 3 seconds per slide
+            }
+
+            // --- PRODUCT DATA & LOGIC ---
+            // UPDATED: Now uses 'images' array instead of single 'image' string.
+            const inventory = [
+                {
+                    id: 'OE-02',
+                    name: 'Tyrus',
+                    subtitle: 'Boost & Envelope Wavefolder',
+                    price: 199,
+                    category: 'Modulation',
+                    images: [
+                        'assets/Tyrus1.png',
+                        'assets/Tyrus2.png'
+                    ],
+                    specs: { bypass: 'Buffered', draw: '85mA', power: '9V DC', origin: "The Fold Point" },
+                    features: [
+                        '<strong>Analog Boost + Envelope-Driven Wavefolder</strong><br><span class="text-text-muted font-light">A dynamic front end feeds a responsive wavefolding stage, letting harmonics emerge according to touch rather than force alone.</span>',
+                        '<strong>Dynamic, Not Compressed</strong><br><span class="text-text-muted font-light">Playing nuance is preserved. Each note unfolds differently depending on attack, sustain, and intent.</span>',
+                        '<strong>Wide Harmonic Vocabulary</strong><br><span class="text-text-muted font-light">Moves fluidly from radiant edge and vocal saturation to metallic tension and carefully managed chaos.</span>',
+                        '<strong>Symmetry and Fracture</strong><br><span class="text-text-muted font-light">Clean and folded signals coexist—stillness and pressure meeting at the fold point, usually without arguing.</span>'
+                    ],
+                    desc: "Tyrus is an expressive wavefolding instrument shaped by touch, force, and balance. Guided by Apollo and the sacred swans said to carry his voice, it explores that precise moment when harmony is gently persuaded into transformation. This is not a conventional distortion pedal, nor is it interested in pretending to be one. At its core, Tyrus pairs an always-on analog boost with an envelope-driven wavefolder, allowing sound to respond naturally to how it's played. Play lightly and the tone remains open and articulate. Dig in and the waveform bends, blooms, and fractures; revealing harmonics that feel reactive, vocal, and very much alive. Tyrus doesn't compress your playing into obedience; it listens, then responds.",
+               },
+                {
+                    id: 'OE-03',
+                    name: 'Eclipse',
+                    subtitle: 'Dual Filter',
+                    price: 229,
+                    category: 'Modulation',
+                    images: [
+                        'assets/Eclipse1.png',
+                        'assets/Eclipse2.png'
+                    ],
+                    specs: { bypass: 'True Bypass', draw: '130mA', power: '9V DC', origin: "When the Light Looked Away" },
+                    features: [
+                        '<strong>Parallel Dual-Filter Architecture</strong><br><span class="text-text-muted font-light">Two resonant filters operate side by side, allowing frequencies to interact, overlap, and part ways with dignity.</span>',
+                        '<strong>Complex LFO Modulation</strong><br><span class="text-text-muted font-light">Drives evolving motion across the filter paths, producing organic sweeps, rhythmic pulses, and slow, hypnotic shifts.</span>',
+                        '<strong>Stereo Image Control</strong><br><span class="text-text-muted font-light">Creates width, movement, and spatial depth, making sound feel larger, closer, or slightly off to one side.</span>',
+                        '<strong>Precision Frequency Sculpting</strong><br><span class="text-text-muted font-light">Capable of both surgical tone shaping and immersive modulation, depending on how deliberately you approach it.</span>'
+                    ],
+                    desc: 'Eclipse is an instrument concerned with light, shadow, and what happens when both decide to occupy the same space. Guided by Apollo during one of his more contemplative moments, Eclipse explores the boundary where clarity gives way to motion, and motion becomes something quietly hypnotic. This is not a single filter doing a single job. Eclipse prefers to work in pairs.\n\nAt its core, Eclipse runs two resonant filters in parallel, allowing frequencies to be shaped, divided, and recombined while a complex LFO gently encourages them to move. Used with restraint, it delivers precise frequency sculpting and subtle spatial movement. Used with less restraint, it produces dark, swirling modulation that suggests depth, orbit, and the slow mechanics of celestial events. Designed for guitar, bass, synth, and modular systems, Eclipse integrates naturally into rigs that appreciate nuance, patience, and the occasional moment of controlled obscurity.\n\nNothing disappears entirely. It just moves.',
+                    extendedInfo: ''
+                },
+                {
+                    id: 'OE-04',
+                    name: 'Aeon',
+                    subtitle: 'Delay & Octave',
+                    price: 249,
+                    category: 'Time',
+                    images: [
+                        'assets/Aeon1.png',
+                        'assets/Aeon2.png'
+                    ],
+                    specs: { bypass: 'Buffered', draw: '85mA', power: '9V DC', origin: "Later Than Expected" },
+                    features: [
+                        '<strong>Bucket-Brigade Delay Engine</strong><br><span class="text-text-muted font-light">Delivers warm, organic repeats with the gentle degradation expected of analog timekeeping.</span>',
+                        '<strong>Sub-Octave Generator</strong><br><span class="text-text-muted font-light">Adds a clean, stable octave below the signal or its repeats, introducing depth, weight, and the sense that something large is moving underneath.</span>',
+                        '<strong>Infinite Oscillation</strong><br><span class="text-text-muted font-light">Allows repeats to feed back indefinitely, creating evolving textures, drones, and moments of reflection that may last longer than anticipated.</span>',
+                        '<strong>Trails Mode</strong><br><span class="text-text-muted font-light">Lets echoes continue naturally after bypass, because abruptly stopping time rarely ends well.</span>'
+                    ],
+                    desc: 'Aeon is an instrument concerned with time, depth, and the uncomfortable realization that both are more flexible than advertised. Guided by Apollo in his role as keeper of rhythm and order (and occasional breaker of both), Aeon explores what happens when echoes are allowed to linger, multiply, and drop an octave for emphasis.\n\nAt its core, Aeon pairs a classic bucket-brigade delay with a pristine sub-octave generator, allowing repeats to sink lower and stretch further with each pass. Used sparingly, it delivers warm, dimensional delay with added weight and gravity. Used less sparingly, it begins to suggest that time may not be linear after all. Trails drift, notes fold back on themselves, and the octave below quietly insists on being heard. Designed for guitar, bass, synth, and modular systems, Aeon integrates naturally into rigs that value atmosphere, patience, and the courage to let a sound finish its sentence.\n\nInfinite oscillation is available for those moments when restraint feels optional.',
+                    extendedInfo: ''
+                },
+                {
+                    id: 'OE-05',
+                    name: 'Maelstrom',
+                    subtitle: 'Total Noise Generator',
+                    price: 199,
+                    category: 'Fuzz',
+                    images: [
+                        'assets/Maelstrom2.png',
+                        'assets/Maelstrom1.png'
+                    ],
+                    specs: { bypass: 'True Bypass', draw: '40mA', power: '9V DC', origin: "Hell (With Notes)" },
+                    features: [
+                        '<strong>Tri-Engine Gain Architecture</strong><br><span class="text-text-muted font-light">DS-1–inspired distortion, Big Muff–style fuzz, and TS-9–influenced overdrive coexist in a single system, each contributing its own opinion about how sound should be treated.</span>',
+                        '<strong>Feedback Control</strong><br><span class="text-text-muted font-light">Routes your signal back into itself, allowing pitch, harmonics, and intensity to evolve dynamically. Small adjustments can produce large results.</span>',
+                        '<strong>Controlled Instability</strong><br><span class="text-text-muted font-light">Capable of tight, aggressive tones or expansive, self-interacting noise fields, depending largely on how much you encourage it.</span>',
+                        '<strong>Designed for Play, Not Safety</strong><br><span class="text-text-muted font-light">Rewards curiosity, attention, and a willingness to listen carefully before turning the next knob.</span>'
+                    ],
+                    desc: 'Maelstrom is an instrument of chaos, thoughtfully arranged. Guided by Apollo in one of his less orderly moods, it explores what happens when a signal is encouraged—repeatedly and with enthusiasm—to argue with itself. This is not a polite pedal, and it makes no promises about behaving sensibly once you invite it into the signal chain.\n\nAt its heart, Maelstrom feeds your sound back through a network of pitch-shifting and gain stages, allowing distortion, fuzz, and overdrive to collide in ways that are sometimes musical and occasionally enlightening. Set carefully, it delivers controlled aggression and layered harmonic density. Push further and it begins to form its own ideas about structure, rhythm, and volume. Designed for guitar, bass, synth, and modular systems alike, Maelstrom integrates naturally into rigs that value exploration, restraint, and the occasional moment of brave decision-making.\n\Warning: output levels may reach values best described as “committed.”',
+                    extendedInfo: ''
+                },
+                {
+                    id: 'OE-01',
+                    name: 'Pyr',
+                    subtitle: 'Expressive Distortion',
+                    price: 189,
+                    category: 'Fuzz',
+                    images: [
+                        'assets/Pyr1.png',
+                        'assets/Pyr2.png'
+                    ],
+                    specs: { bypass: 'Buffered', draw: '15mA', power: '9V DC', origin: "A Controlled Burn" },
+                    features: [
+                        '<strong>3-Stage MOSFET Fuzz Gain Block</strong><br><span class="text-text-muted font-light">Delivers a wide dynamic range, from controlled overdrive through fractured distortion to unstable fuzz, depending largely on how firmly you insist.</span>',
+                        '<strong>Precision Tone Shaping</strong><br><span class="text-text-muted font-light">A 1 dB high-pass filter refines low-end focus without stripping weight, preserving articulation and preventing unnecessary rumbling.</span>',
+                        '<strong>Buffered Output</strong><br><span class="text-text-muted font-light">Ensures consistent signal integrity across complex rigs, with smooth output control and no surprises of the electrical kind.</span>',
+                        '<strong>Expressive by Design</strong><br><span class="text-text-muted font-light">Maintains clarity at lower settings; introduces harmonic collision, octave artifacts, and mild unruliness when pushed.</span>'
+                    ],
+                    desc: "Pyr is an expressive distortion instrument shaped by internal tension and release. Guided by Apollo—god of light, music, and inconvenient truths—it explores the narrow boundary where control, clarity, and intensity briefly agree to coexist. This is not a traditional fuzz pedal, and it would prefer not to be mistaken for one.\n\nPyr moves fluidly between articulate overdrive, fractured distortion, and unstable fuzz, responding directly to playing dynamics, signal level, and intent. Play gently and it behaves with admirable restraint. Push harder and it begins to reveal its more complicated opinions about harmony. Designed for guitar, bass, synth, modular, and CV-driven systems, Pyr integrates naturally into modern pedalboards and more ambitious signal paths alike.",
+                }
+            ];
+
+            let currentProduct = null;
+            let cartCount = 0;
+            let currentImageIndex = 0;
+
+            // Touch variables for swipe
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            function init() {
+                lucide.createIcons();
+                renderProducts('all');
+                setupObservers();
+                initHeroCarousel(); // Initialize Hero Slideshow
+                setupSwipe(); // Initialize Modal Swipe
+            }
+
+            function setupSwipe() {
+                const container = document.getElementById('modal-image-container');
+
+                container.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                container.addEventListener('touchend', e => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, { passive: true });
+            }
+
+            function handleSwipe() {
+                if (!currentProduct || !currentProduct.images || currentProduct.images.length <= 1) return;
+
+                const threshold = 50; // Minimum distance for a swipe
+
+                if (touchStartX - touchEndX > threshold) {
+                    // Swiped Left -> Next Image
+                    nextSlide();
+                }
+
+                if (touchEndX - touchStartX > threshold) {
+                    // Swiped Right -> Previous Image
+                    prevSlide();
+                }
+            }
+
+            function renderProducts(filter) {
+                const grid = document.getElementById('product-grid');
+                grid.innerHTML = '';
+
+                const data = filter === 'all' ? inventory : inventory.filter(p => p.category === filter);
+
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    if (btn.innerText.toLowerCase() === filter.toLowerCase() || (filter === 'all' && btn.innerText === 'All')) {
+                        btn.classList.add('bg-white', 'text-void');
+                        btn.classList.remove('text-text-muted');
+                    } else {
+                        btn.classList.remove('bg-white', 'text-void');
+                        btn.classList.add('text-text-muted');
+                    }
+                });
+
+                data.forEach((p, idx) => {
+                    // Use first image for grid
+                    const mainImage = p.images && p.images.length > 0 ? p.images[0] : 'https://placehold.co/400x400/121214/C5A059?text=CONCEPT';
+
+                    grid.innerHTML += `
+                    <div class="group relative card-glass rounded-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-brand-gold/10 fade-in-up" style="transition-delay: ${idx * 50}ms">
+                        <div class="relative aspect-square p-8 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center cursor-pointer overflow-hidden" onclick="openProductModal('${p.name}')">
+                            <img src="${mainImage}" class="w-full h-full object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3 relative z-10" alt="${p.name}" loading="lazy" onerror="this.src='https://placehold.co/400x400/121214/C5A059?text=CONCEPT'">
+                            <div class="absolute inset-0 bg-brand-gold/10 filter blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-display font-bold text-white group-hover:text-brand-gold transition-colors">${p.name}</h3>
+                                    <p class="text-[10px] font-bold text-text-muted uppercase tracking-wider">${p.subtitle}</p>
+                                </div>
+                                <!-- Price removed from grid -->
+                            </div>
+                            <!-- Buttons simplified: Removed Add to Cart, kept inspect visually prominent -->
+                            <div class="flex gap-2 mt-6">
+                                <button onclick="openProductModal('${p.name}')" class="flex-1 px-4 py-3 bg-white/5 hover:bg-brand-gold border border-white/20 hover:border-brand-gold rounded-sm text-white hover:text-brand-dark transition-colors uppercase tracking-widest text-xs font-bold flex items-center justify-center gap-2">
+                                    <i data-lucide="scan-line" class="w-4 h-4"></i> Inspect Instrument
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                });
+                lucide.createIcons();
+                setupObservers();
+            }
+
+            // CAROUSEL LOGIC
+            function openProductModal(name) {
+                const p = inventory.find(i => i.name === name);
+                if (!p) return;
+                currentProduct = p;
+                currentImageIndex = 0; // Reset to first image
+
+                updateCarousel(); // Initialize images/buttons
+
+                document.getElementById('modal-title').innerText = p.name;
+                document.getElementById('modal-subtitle').innerText = p.subtitle;
+                document.getElementById('modal-desc').innerText = p.desc;
+                document.getElementById('modal-category').innerText = p.category;
+
+                const featureList = document.getElementById('modal-features');
+                featureList.innerHTML = p.features.map(f => `<li class="flex items-start gap-2 mb-2"><div class="w-1.5 h-1.5 mt-1.5 bg-brand-gold rounded-full shrink-0"></div><span class="leading-tight">${f}</span></li>`).join('');
+
+                document.getElementById('spec-bypass').innerText = p.specs.bypass;
+                document.getElementById('spec-power').innerText = p.specs.power;
+                document.getElementById('spec-draw').innerText = p.specs.draw;
+                document.getElementById('spec-origin').innerText = p.specs.origin;
+
+                // Inject Extended Info
+                const extendedContainer = document.getElementById('modal-extended');
+                extendedContainer.innerHTML = p.extendedInfo || '';
+
+                const modal = document.getElementById('product-modal');
+                const card = document.getElementById('modal-card');
+
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    card.classList.remove('opacity-0', 'translate-y-20', 'md:scale-95');
+                    card.classList.add('opacity-100', 'translate-y-0', 'md:scale-100');
+                }, 20);
+                document.body.style.overflow = 'hidden';
+                lucide.createIcons(); // Refresh icons inside modal
+            }
+
+            function updateCarousel() {
+                if (!currentProduct) return;
+
+                const img = document.getElementById('modal-img');
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+                const dotsContainer = document.getElementById('carousel-dots');
+
+                // Set Image
+                if (currentProduct.images && currentProduct.images.length > 0) {
+                    img.src = currentProduct.images[currentImageIndex];
+                } else {
+                    img.src = 'https://placehold.co/400x400/121214/C5A059?text=CONCEPT';
+                }
+
+                // Controls Visibility
+                if (currentProduct.images && currentProduct.images.length > 1) {
+                    prevBtn.classList.remove('hidden');
+                    nextBtn.classList.remove('hidden');
+                } else {
+                    prevBtn.classList.add('hidden');
+                    nextBtn.classList.add('hidden');
+                }
+
+                // Render Dots
+                dotsContainer.innerHTML = '';
+                if (currentProduct.images && currentProduct.images.length > 1) {
+                    currentProduct.images.forEach((_, idx) => {
+                        const dot = document.createElement('div');
+                        dot.className = `carousel-dot ${idx === currentImageIndex ? 'active' : ''}`;
+                        dot.onclick = () => {
+                            currentImageIndex = idx;
+                            updateCarousel();
+                        };
+                        dotsContainer.appendChild(dot);
+                    });
+                }
+            }
+
+            function nextSlide() {
+                if (!currentProduct || !currentProduct.images) return;
+                currentImageIndex++;
+                if (currentImageIndex >= currentProduct.images.length) {
+                    currentImageIndex = 0;
+                }
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                if (!currentProduct || !currentProduct.images) return;
+                currentImageIndex--;
+                if (currentImageIndex < 0) {
+                    currentImageIndex = currentProduct.images.length - 1;
+                }
+                updateCarousel();
+            }
+
+            function closeProductModal() {
+                const modal = document.getElementById('product-modal');
+                const card = document.getElementById('modal-card');
+                card.classList.remove('opacity-100', 'translate-y-0', 'md:scale-100');
+                card.classList.add('opacity-0', 'translate-y-20', 'md:scale-95');
+                setTimeout(() => { modal.classList.add('hidden'); }, 300);
+                document.body.style.overflow = 'auto';
+            }
+
+            function toggleCart() {
+                const drawer = document.getElementById('cart-drawer');
+                const panel = document.getElementById('cart-panel');
+                const backdrop = document.getElementById('cart-backdrop');
+
+                if (drawer.classList.contains('hidden')) {
+                    drawer.classList.remove('hidden');
+                    setTimeout(() => {
+                        backdrop.classList.remove('opacity-0');
+                        panel.classList.remove('translate-x-full');
+                    }, 10);
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    backdrop.classList.add('opacity-0');
+                    panel.classList.add('translate-x-full');
+                    setTimeout(() => { drawer.classList.add('hidden'); }, 500);
+                    document.body.style.overflow = 'auto';
+                }
+            }
+
+            function addToCart(name) {
+                cartCount++;
+                const el = document.getElementById('cart-count');
+                el.innerText = cartCount;
+                el.classList.remove('opacity-0');
+                el.classList.add('scale-125');
+                setTimeout(() => el.classList.remove('scale-125'), 200);
+                closeProductModal();
+                toggleCart();
+            }
+
+            function toggleAccordion(btn) {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                if (content.style.height && content.style.height !== '0px') {
+                    content.style.height = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.height = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                }
+            }
+
+            function toggleMenu() {
+                const menu = document.getElementById('mobile-menu');
+                if (menu.classList.contains('-translate-y-full')) {
+                    menu.classList.remove('-translate-y-full');
+                } else {
+                    menu.classList.add('-translate-y-full');
+                }
+            }
+
+            function setupObservers() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('visible');
+                            observer.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+            }
+
+            init();
+
+            // --- CONSENT MANAGEMENT ---
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+
+            function setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+            }
+
+            function initAnalytics() {
+                // const gaScript = document.createElement('script');
+                // gaScript.async = true;
+                // gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B';
+                // document.head.appendChild(gaScript);
+
+                // gaScript.onload = () => {
+                //     window.dataLayer = window.dataLayer || [];
+                //     function gtag() { dataLayer.push(arguments); }
+                //     gtag('js', new Date());
+                //     gtag('config', 'G-4XV6K8C74B');
+                // }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const consent = getCookie('oepicus_consent');
+                const consentBanner = document.getElementById('consent-banner');
+
+                if (consent === 'granted') {
+                    initAnalytics();
+                } else if (!consent) {
+                    consentBanner.classList.remove('hidden');
+                }
+
+                document.getElementById('consent-accept').addEventListener('click', () => {
+                    setCookie('oepicus_consent', 'granted', 365);
+                    consentBanner.classList.add('hidden');
+                    initAnalytics();
+                });
+
+                document.getElementById('consent-decline').addEventListener('click', () => {
+                    setCookie('oepicus_consent', 'denied', 365);
+                    consentBanner.classList.add('hidden');
+                });
+            });
+        </script>
+
+        <script>
+            document.querySelectorAll('form[data-form="subscribe"]').forEach(form => {
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    const currentForm = event.target;
+                    const formData = new FormData(currentForm);
+                    const data = Object.fromEntries(formData.entries());
+                    const responseDiv = currentForm.nextElementSibling;
+
+                    // Handle tags - split by comma and trim whitespace, then create an array
+                    const tagsInput = currentForm.querySelector('input[name="tags"]');
+                    if (tagsInput && tagsInput.value) {
+                        data.tags = tagsInput.value.split(',').map(tag => tag.trim());
+                    }
+
+                    const baseUrl = 'https://inventor.1voct.org';
+                    const apiUrl = `${baseUrl}/inventor/api/create_crm_user/`;
+
+                    fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
+                    })
+                        .then(response => response.json())
+                        .then(result => {
+                            if (result.status === 'success') {
+                                responseDiv.className = 'text-brand-gold';
+                                responseDiv.textContent = 'Thank you for subscribing!';
+                                currentForm.reset();
+                            } else {
+                                responseDiv.className = 'text-red-400';
+                                responseDiv.textContent = 'Error: ' + (result.message || 'An unknown error occurred.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            responseDiv.className = 'text-red-400';
+                            responseDiv.textContent = 'A network error occurred. Please try again.';
+                        });
+                });
+            });
+        </script>
+    </body>
+
 </html>
