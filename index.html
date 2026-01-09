@@ -28,6 +28,7 @@
             fbq('init', '850477167883279');
             fbq('track', 'PageView');
         </script>
+        
         <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=850477167883279&ev=PageView&noscript=1" /></noscript>
         <!-- End Meta Pixel Code -->
 
@@ -70,8 +71,8 @@
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 
         <!-- Icons -->
-        <script src="https://unpkg.com/lucide@latest"></script>
-
+        <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+        <script src="https://unpkg.com/lucide@0.562.0/dist/umd/lucide.min.js"></script>
         <script>
             tailwind.config = {
                 theme: {
@@ -1372,7 +1373,7 @@
                 if (currentProduct.images && currentProduct.images.length > 0) {
                     img.src = currentProduct.images[currentImageIndex];
                 } else {
-                    img.src = 'https://placehold.co/400x400/121214/C5A059?text=CONCEPT';
+                    img.src = '';
                 }
 
                 // Controls Visibility
