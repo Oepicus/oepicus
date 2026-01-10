@@ -1,0 +1,16 @@
+{
+  "name": "OEPICUS | Future Audio Instruments",
+  "short_name": "Oepicus",
+  "description": "Future Audio Instruments. Crafting innovative sound tools for musicians and producers worldwide.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121214",
+  "theme_color": "#C5A059",
+  "icons": [
+    {
+      "src": "/assets/Oepicus-Logo-RED-GOLD-NO-BG-1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

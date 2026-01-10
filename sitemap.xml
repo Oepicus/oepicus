@@ -1,11 +1,46 @@
+---
+layout: null
+sitemap: false
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <!-- Only the canonical URL of the page should be in the sitemap. -->
-    <!-- Hash fragments (#) are for client-side navigation and are ignored by Google for indexing. -->
-    <loc>https://oepicus.com/</loc>
-    <lastmod>2026-01-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+{% comment %} 
+  <!-- Posts -->
+  {% for post in site.posts %}
+    {% unless post.sitemap == false or post.published == false %}
+    <url>
+      <loc>{{ site.url }}{{ post.url | relative_url }}</loc>
+      <lastmod>
+        {%- if post.last_modified_at -%}
+          {{ post.last_modified_at | date_to_xmlschema }}
+        {%- elsif post.date -%}
+          {{ post.date | date_to_xmlschema }}
+        {%- else -%}
+          {{ site.time | date_to_xmlschema }}
+        {%- endif -%}
+      </lastmod>
+      <changefreq>{{ post.sitemap.changefreq | default: 'monthly' }}</changefreq>
+      <priority>{{ post.sitemap.priority   | default: '0.6' }}</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+{% endcomment %}
+  <!-- Regular pages -->
+  {% for page in site.pages %}
+    {% unless page.sitemap == false or page.path contains '404' or page.path contains 'sitemap.xml' %}
+    <url>
+      <loc>{{ site.url }}{{ page.url | relative_url }}</loc>
+      <lastmod>
+        {%- if page.last_modified_at -%}
+          {{ page.last_modified_at | date_to_xmlschema }}
+        {%- else -%}
+          {{ site.time | date_to_xmlschema }}
+        {%- endif -%}
+      </lastmod>
+      <changefreq>{{ page.sitemap.changefreq | default: 'monthly' }}</changefreq>
+      <priority>{{ page.sitemap.priority   | default: '0.5' }}</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+  <!-- Optional: add collections, tags, categories, etc. manually -->
 </urlset>

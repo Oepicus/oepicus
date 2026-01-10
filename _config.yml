@@ -40,13 +40,19 @@ description: >- # this means to ignore newlines until "baseurl:"
   # Example: {{ site.description }} or {{ site.description | truncate: 160 }}
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+logo: /assets/Oepicus-Logo-RED-GOLD-NO-BG-1.png
+social:
+  name: Oepicus
+  links:
+    - https://twitter.com/oepicus
+    - https://www.facebook.com/profile.php?id=61584611603188
 
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  # - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -67,3 +73,20 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Defaults for posts and pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sitemap:
+        changefreq: "daily"
+        priority: 0.9
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      sitemap:
+        changefreq: "weekly"
+        priority: 0.7
