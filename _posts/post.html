@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- Post Header Section -->
+<header class="relative flex justify-center pt-48 md:pt-56 pb-24 md:pb-32 px-6 z-10">
+    <div class="max-w-4xl mx-auto text-center fade-in-up z-20">
+        <p class="text-sm text-text-muted mb-4">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        </p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-bold leading-tight tracking-tight">
+            <span class="text-gradient">{{ page.title }}</span>
+        </h1>
+    </div>
+</header>
+
+<!-- Post Content Section -->
+<section id="post-content" class="py-16 md:py-24 px-6 relative z-10">
+    <div class="max-w-4xl mx-auto">
+        <article class="fade-in-up glass rounded-xl overflow-hidden p-8 md:p-12 border border-white/5">
+            <div class="prose prose-invert prose-lg max-w-none text-text-muted leading-relaxed prose-headings:text-white prose-headings:font-display prose-a:text-brand-gold prose-strong:text-white">
+                {{ content }}
+            </div>
+        </article>
+
+        <div class="mt-16 text-center fade-in-up">
+            <a href="/journal.html" class="px-8 py-4 border border-white/20 rounded-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2 text-white tracking-widest uppercase text-sm group max-w-xs mx-auto">
+                <i data-lucide="arrow-left" class="w-4 h-4 group-hover:text-brand-gold transition-colors"></i> Back to The Journey
+            </a>
+        </div>
+    </div>
+</section>

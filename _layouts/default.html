@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <meta charset="UTF-8">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-4XV6K8C74B');
+        </script>
+
+        <!-- Meta Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '850477167883279');
+            fbq('track', 'PageView');
+        </script>
+
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=850477167883279&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO & Metadata -->
+        <title>OEPICUS | Future Audio Instruments</title>
+        <meta name="description" content="Oepicus crafts high-fidelity audio instruments for the modern musician. Precision-engineered guitar pedals and effects built in the USA, HKG, and PHL.">
+        <meta name="keywords" content="Guitar Pedals, Doom Metal, Modular Synthesisers, Eurorack Modular, Boutique Pedals, Effects Pedals, Guitar Effects, Synth Pedals, CV Control, Wavefolder, Distortion, Fuzz, Delay, Filter, Audio Instruments, Oepicus">
+        <link rel="canonical" href="https://oepicus.com/" />
+        <meta name="theme-color" content="#C5A059">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <!-- <link rel="icon" href="favicon.ico" sizes="any"> -->
+        <link rel="icon" href="/icon.svg" type="image/svg+xml">
+        <!-- <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"> -->
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://oepicus.com/">
+        <meta property="og:title" content="OEPICUS | Future Audio Instruments">
+        <meta property="og:description" content="Oepicus crafts high-fidelity audio instruments for the modern musician. Precision-engineered guitar pedals and effects built in the USA, HKG, and PHL.">
+        <meta property="og:image" content="https://oepicus.com/assets/oepicus-social-share.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://oepicus.com/">
+        <meta property="twitter:title" content="OEPICUS | Future Audio Instruments">
+        <meta property="twitter:description" content="Oepicus crafts high-fidelity audio instruments for the modern musician. Precision-engineered guitar pedals and effects built in the USA, HKG, and PHL.">
+        <meta property="twitter:image" content="https://oepicus.com/assets/oepicus-social-share.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+        <!-- Icons -->
+        <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+        <script src="https://unpkg.com/lucide@0.562.0/dist/umd/lucide.min.js"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            void: '#050505',
+                            panel: '#121214',
+                            brand: {
+                                gold: '#C5A059',
+                                red: '#8A2525',
+                                dark: '#0A0A0A'
+                            },
+                            text: {
+                                main: '#ffffff',
+                                muted: '#94a3b8'
+                            }
+                        },
+                        fontFamily: {
+                            display: ['"Red Rose"', 'cursive'],
+                            sans: ['"Red Rose"', 'sans-serif'],
+                            ipa: ['"Noto Sans"', 'sans-serif']
+                        },
+                        animation: {
+                            'float': 'float 8s ease-in-out infinite',
+                            'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                            'spin-slow': 'spin 15s linear infinite',
+                            'glitch': 'glitch 1s linear infinite',
+                        },
+                        keyframes: {
+                            float: {
+                                '0%, 100%': { transform: 'translateY(0)' },
+                                '50%': { transform: 'translateY(-20px)' }
+                            },
+                            glitch: {
+                                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+                                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+                                '62%': { transform: 'translate(0,0) skew(5deg)' },
+                            }
+                        },
+                        screens: { 'xs': '475px' }
+                    }
+                }
+            }
+        </script>
+
+        <style>
+            /* Base */
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #050505;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #333;
+                border-radius: 3px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .glass {
+                background: rgba(255, 255, 255, 0.03);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            /* Updated Glass Heavy to be more transparent for cards */
+            .glass-heavy {
+                background: rgba(18, 18, 20, 0.7);
+                /* Reduced opacity from 0.95 */
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            /* New Utility for Product Cards */
+            .card-glass {
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .text-gradient {
+                background: linear-gradient(to right, #C5A059, #8A2525);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .fade-in-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            .fade-in-up.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .glitch-hover:hover {
+                animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+                color: #C5A059;
+            }
+
+            .safe-bottom {
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+
+            /* SCANLINES */
+            .scanlines {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1));
+                background-size: 100% 4px;
+                pointer-events: none;
+                z-index: 5;
+                opacity: 0.3;
+            }
+
+            /* GOD RAYS */
+            .god-ray {
+                background: conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(197, 160, 89, 0.1) 60deg, transparent 120deg);
+                filter: blur(40px);
+            }
+
+            /* Grid Background for Map Effect */
+            .bg-grid {
+                background-size: 40px 40px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            }
+
+            .glow-text {
+                text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+            }
+
+            /* Custom scrollbar for modal content */
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: rgba(197, 160, 89, 0.3);
+                border-radius: 4px;
+            }
+
+            /* Carousel Styles */
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 0.5rem;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(4px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                /* Opacity removed to keep arrows visible automatically */
+                z-index: 30;
+            }
+
+            /* Removed hover-only visibility for better mobile UX */
+            .carousel-btn:hover {
+                background: rgba(197, 160, 89, 0.8);
+                border-color: rgba(197, 160, 89, 1);
+            }
+
+            .carousel-dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            .carousel-dot.active {
+                background: #C5A059;
+                transform: scale(1.3);
+            }
+
+            /* Heartbeat Background
+            .bg-heartbeat {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .bg-heartbeat::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 150%;
+                padding-bottom: 150%;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(138, 37, 37, 0.5) 0%, transparent 70%);
+                animation: heartbeat 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+                transform-origin: center;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+
+            @keyframes heartbeat {
+                0% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                10% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                }
+
+                25% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                30% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                40% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                }
+
+                55% {
+                    transform: translate(-50%, -50%) scale(0.95);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translate(-50%, -50%) scale(0.9);
+                    opacity: 0;
+                }
+            } */
+
+
+            /* Hero Carousel Transitions */
+            .hero-slide {
+                transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+                /* Initial state for non-active slides handled in HTML classes */
+            }
+        </style>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Oepicus",
+          "url": "https://oepicus.com/",
+          "logo": "https://oepicus.com/assets/Oepicus-Logo-RED-GOLD-NO-BG-1.png",
+          "description": "Oepicus crafts high-fidelity audio instruments for the modern musician. Precision-engineered guitar pedals and effects built in the USA, HKG, and PHL.",
+          "sameAs": [
+            "https://www.instagram.com/oepicus",
+            "https://www.facebook.com/profile.php?id=61584611603188",
+            "https://www.youtube.com/@Oepicus",
+            "https://www.tiktok.com/@oepicus"
+          ]
+        }
+        </script>
+    </head>
+
+    <body class="bg-void text-text-main font-sans antialiased selection:bg-brand-gold selection:text-brand-dark overflow-x-hidden relative">
+
+        <!-- CANVAS BACKGROUND (PARTICLES) -->
+        <canvas id="particle-canvas" class="fixed inset-0 z-0 pointer-events-none"></canvas>
+
+        <!-- SCANLINES OVERLAY -->
+        <div class="scanlines"></div>
+
+
+        {% include navigation.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+
+        {% include consent.html %}
+
+
+
+
+
+
+        <script>
+            // --- ANIMATION ENGINE: VOID PARTICLES ---
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            let particles = [];
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.5;
+                    this.vy = (Math.random() - 0.5) * 0.5;
+                    this.size = Math.random() * 3 + 1;
+                    this.alpha = Math.random() * 0.5 + 0.3;
+                    this.color = Math.random() > 0.5 ? '197, 160, 89' : '138, 37, 37';
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0) this.x = width;
+                    if (this.x > width) this.x = 0;
+                    if (this.y < 0) this.y = height;
+                    if (this.y > height) this.y = 0;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${this.color}, ${this.alpha})`;
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                particles = [];
+                const count = Math.min(window.innerWidth / 8, 200);
+                for (let i = 0; i < count; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+                requestAnimationFrame(animateParticles);
+            }
+
+            window.addEventListener('resize', () => { resize(); initParticles(); });
+            resize();
+            initParticles();
+            animateParticles();
+
+            // --- HERO CAROUSEL LOGIC ---
+            function initHeroCarousel() {
+                const slides = document.querySelectorAll('.hero-slide');
+                if (slides.length === 0) return;
+
+                let current = 0;
+
+                // Start rotation loop
+                setInterval(() => {
+                    // Morph out current
+                    slides[current].classList.remove('opacity-100', 'scale-100', 'blur-0');
+                    slides[current].classList.add('opacity-0', 'scale-95', 'blur-sm');
+
+                    // Advance index
+                    current = (current + 1) % slides.length;
+
+                    // Morph in next
+                    slides[current].classList.remove('opacity-0', 'scale-95', 'blur-sm');
+                    slides[current].classList.add('opacity-100', 'scale-100', 'blur-0');
+                }, 3000); // 3 seconds per slide
+            }
+
+            // --- PRODUCT DATA & LOGIC ---
+            const products = {{ site.data.products | jsonify }};
+
+            let currentProduct = null;
+            let cartCount = 0;
+            let currentImageIndex = 0;
+
+            // Touch variables for swipe
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            function init() {
+                lucide.createIcons();
+                setupObservers();
+                initHeroCarousel(); // Initialize Hero Slideshow
+                setupSwipe(); // Initialize Modal Swipe
+            }
+
+            function setupSwipe() {
+                const container = document.getElementById('modal-image-container');
+
+                container.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                container.addEventListener('touchend', e => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, { passive: true });
+            }
+
+            function handleSwipe() {
+                if (!currentProduct || !currentProduct.images || currentProduct.images.length <= 1) return;
+
+                const threshold = 50; // Minimum distance for a swipe
+
+                if (touchStartX - touchEndX > threshold) {
+                    // Swiped Left -> Next Image
+                    nextSlide();
+                }
+
+                if (touchEndX - touchStartX > threshold) {
+                    // Swiped Right -> Previous Image
+                    prevSlide();
+                }
+            }
+
+            function renderProducts(filter) {
+                const productCards = document.querySelectorAll('#product-grid > div');
+    
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    const btnFilter = btn.innerText.trim();
+                    if (btnFilter.toLowerCase() === filter.toLowerCase()) {
+                        btn.classList.add('bg-white', 'text-void');
+                        btn.classList.remove('text-text-muted');
+                    } else {
+                        btn.classList.remove('bg-white', 'text-void');
+                        btn.classList.add('text-text-muted');
+                    }
+                });
+    
+                productCards.forEach(card => {
+                    const category = card.dataset.category;
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // CAROUSEL LOGIC
+            function openProductModal(name) {
+                const p = products.find(i => i.name === name);
+                if (!p) return;
+                currentProduct = p;
+                currentImageIndex = 0; // Reset to first image
+
+                updateCarousel(); // Initialize images/buttons
+
+                document.getElementById('modal-title').innerText = p.name;
+                document.getElementById('modal-subtitle').innerText = p.subtitle;
+                document.getElementById('modal-desc').innerText = p.desc;
+                document.getElementById('modal-category').innerText = p.category;
+
+                const featureList = document.getElementById('modal-features');
+                featureList.innerHTML = p.features.map(f => `<li class="flex items-start gap-2 mb-2"><div class="w-1.5 h-1.5 mt-1.5 bg-brand-gold rounded-full shrink-0"></div><span class="leading-tight">${f}</span></li>`).join('');
+
+                document.getElementById('spec-bypass').innerText = p.specs.bypass;
+                document.getElementById('spec-power').innerText = p.specs.power;
+                document.getElementById('spec-draw').innerText = p.specs.draw;
+                document.getElementById('spec-origin').innerText = p.specs.origin;
+
+                // Inject Extended Info
+                const extendedContainer = document.getElementById('modal-extended');
+                extendedContainer.innerHTML = p.extendedInfo || '';
+
+                const modal = document.getElementById('product-modal');
+                const card = document.getElementById('modal-card');
+
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    card.classList.remove('opacity-0', 'translate-y-20', 'md:scale-95');
+                    card.classList.add('opacity-100', 'translate-y-0', 'md:scale-100');
+                }, 20);
+                document.body.style.overflow = 'hidden';
+                lucide.createIcons(); // Refresh icons inside modal
+            }
+
+            function updateCarousel() {
+                if (!currentProduct) return;
+
+                const img = document.getElementById('modal-img');
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+                const dotsContainer = document.getElementById('carousel-dots');
+
+                // Set Image
+                if (currentProduct.images && currentProduct.images.length > 0) {
+                    img.src = currentProduct.images[currentImageIndex];
+                } else {
+                    img.src = '';
+                }
+
+                // Controls Visibility
+                if (currentProduct.images && currentProduct.images.length > 1) {
+                    prevBtn.classList.remove('hidden');
+                    nextBtn.classList.remove('hidden');
+                } else {
+                    prevBtn.classList.add('hidden');
+                    nextBtn.classList.add('hidden');
+                }
+
+                // Render Dots
+                dotsContainer.innerHTML = '';
+                if (currentProduct.images && currentProduct.images.length > 1) {
+                    currentProduct.images.forEach((_, idx) => {
+                        const dot = document.createElement('div');
+                        dot.className = `carousel-dot ${idx === currentImageIndex ? 'active' : ''}`;
+                        dot.onclick = () => {
+                            currentImageIndex = idx;
+                            updateCarousel();
+                        };
+                        dotsContainer.appendChild(dot);
+                    });
+                }
+            }
+
+            function nextSlide() {
+                if (!currentProduct || !currentProduct.images) return;
+                currentImageIndex++;
+                if (currentImageIndex >= currentProduct.images.length) {
+                    currentImageIndex = 0;
+                }
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                if (!currentProduct || !currentProduct.images) return;
+                currentImageIndex--;
+                if (currentImageIndex < 0) {
+                    currentImageIndex = currentProduct.images.length - 1;
+                }
+                updateCarousel();
+            }
+
+            function closeProductModal() {
+                const modal = document.getElementById('product-modal');
+                const card = document.getElementById('modal-card');
+                card.classList.remove('opacity-100', 'translate-y-0', 'md:scale-100');
+                card.classList.add('opacity-0', 'translate-y-20', 'md:scale-95');
+                setTimeout(() => { modal.classList.add('hidden'); }, 300);
+                document.body.style.overflow = 'auto';
+            }
+
+            function toggleCart() {
+                const drawer = document.getElementById('cart-drawer');
+                const panel = document.getElementById('cart-panel');
+                const backdrop = document.getElementById('cart-backdrop');
+
+                if (drawer.classList.contains('hidden')) {
+                    drawer.classList.remove('hidden');
+                    setTimeout(() => {
+                        backdrop.classList.remove('opacity-0');
+                        panel.classList.remove('translate-x-full');
+                    }, 10);
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    backdrop.classList.add('opacity-0');
+                    panel.classList.add('translate-x-full');
+                    setTimeout(() => { drawer.classList.add('hidden'); }, 500);
+                    document.body.style.overflow = 'auto';
+                }
+            }
+
+            function addToCart(name) {
+                cartCount++;
+                const el = document.getElementById('cart-count');
+                el.innerText = cartCount;
+                el.classList.remove('opacity-0');
+                el.classList.add('scale-125');
+                setTimeout(() => el.classList.remove('scale-125'), 200);
+                closeProductModal();
+                toggleCart();
+            }
+
+            function toggleAccordion(btn) {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                if (content.style.height && content.style.height !== '0px') {
+                    content.style.height = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.height = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                }
+            }
+
+            function toggleMenu() {
+                const menu = document.getElementById('mobile-menu');
+                if (menu.classList.contains('-translate-y-full')) {
+                    menu.classList.remove('-translate-y-full');
+                } else {
+                    menu.classList.add('-translate-y-full');
+                }
+            }
+
+            function setupObservers() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('visible');
+                            observer.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+            }
+
+            init();
+
+            // --- CONSENT MANAGEMENT ---
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+
+            function setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+            }
+
+            function initAnalytics() {
+                // const gaScript = document.createElement('script');
+                // gaScript.async = true;
+                // gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-4XV6K8C74B';
+                // document.head.appendChild(gaScript);
+
+                // gaScript.onload = () => {
+                //     window.dataLayer = window.dataLayer || [];
+                //     function gtag() { dataLayer.push(arguments); }
+                //     gtag('js', new Date());
+                //     gtag('config', 'G-4XV6K8C74B');
+                // }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const consent = getCookie('oepicus_consent');
+                const consentBanner = document.getElementById('consent-banner');
+
+                if (consent === 'granted') {
+                    initAnalytics();
+                } else if (!consent) {
+                    consentBanner.classList.remove('hidden');
+                }
+
+                document.getElementById('consent-accept').addEventListener('click', () => {
+                    setCookie('oepicus_consent', 'granted', 365);
+                    consentBanner.classList.add('hidden');
+                    initAnalytics();
+                });
+
+                document.getElementById('consent-decline').addEventListener('click', () => {
+                    setCookie('oepicus_consent', 'denied', 365);
+                    consentBanner.classList.add('hidden');
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+    {% include inventor_api.js.min.html %}
+
+    </body>
+
+</html>

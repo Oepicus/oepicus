@@ -1,0 +1,69 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: OEPICUS | Future Audio Instruments
+email: info@oepicus.com
+  # Your email address will be obfuscated to prevent spam bots from sniffing it.
+  # You can customize the way it is obfuscated in _includes/email.html.
+  # See https://jekyllrb.com/docs/templates/#filters for details on using filters.
+  # Example: {{ site.email | obfuscate_email }}
+name: Oepicus
+app_name: oepicus
+  # This is used for the author name in the footer and in the feed.xml.
+  # You can customize it further by editing the _includes/author.html file.
+  # Example: {{ site.name }} or {{ site.name | upcase }}   
+description: >- # this means to ignore newlines until "baseurl:"
+  Future Audio Instruments. Crafting innovative sound tools for musicians and producers worldwide.
+  Explore our range of cutting-edge synthesizers, effects, and audio gear designed to inspire creativity
+  and elevate your music production experience.
+  Join our community and stay updated with the latest in audio technology.
+  # This is used for the meta description tag on the home page and in the feed.xml.
+  # It is also used in the Open Graph description tag for social media sharing.
+  # You can customize it further by editing the _includes/metadata.html file.
+  # Example: {{ site.description }} or {{ site.description | truncate: 160 }}
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
