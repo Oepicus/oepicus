@@ -39,7 +39,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   # You can customize it further by editing the _includes/metadata.html file.
   # Example: {{ site.description }} or {{ site.description | truncate: 160 }}
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://oepicus.com" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/Oepicus-Logo-RED-GOLD-NO-BG-1.png
 social:
   name: Oepicus
