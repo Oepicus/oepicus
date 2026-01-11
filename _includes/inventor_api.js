@@ -84,6 +84,7 @@ window.inventor_events.push('{{ page.name | split: "." | first }}');
 
         const dataToSend = {
             visitor_id: visitorId, // Will be null on first visit
+            referrer: document.referrer, // Add referrer to the top-level payload
             browser_info: browserInfo,
             events: events, // Send any collected events
         };
