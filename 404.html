@@ -1,26 +1,16 @@
 ---
+layout: default
+title: Page Not Found
 permalink: /404.html
+noindex: true
+sitemap: false
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Page Not Found - Redirecting</title>
-  
-  <!-- This meta tag provides an immediate client-side redirect to the homepage. It must be in the <head>. -->
-  <meta http-equiv="refresh" content="0; url=/" />
-  
-  <!-- A script for fallback redirection for browsers that might not handle the meta refresh tag. -->
-  <script>
-    window.location.href = "/";
-  </script>
-</head>
-<body>
-  <!-- A message for users in case the redirect fails. -->
-  <div style="text-align: center; padding: 50px; font-family: sans-serif;">
-    <h1>Page not found.</h1>
-    <p>Redirecting you to the homepage...</p>
-    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
-  </div>
-</body>
-</html>
+<section class="min-h-screen flex items-center justify-center bg-brand-dark text-white px-4">
+    <div class="max-w-xl text-center">
+        <h1 class="text-6xl font-bold mb-4">404</h1>
+        <p class="text-xl mb-8">Oops! The page you're looking for doesn't exist.</p>
+        <a href="{{ site.baseurl }}/" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-6 py-3 hover:bg-white transition-colors rounded-sm  text-sm">
+            Go Back Home
+        </a>
+    </div>
+</section>
