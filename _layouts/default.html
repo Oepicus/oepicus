@@ -13,7 +13,7 @@
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-            gtag('config', 'G-4XV6K8C74B');
+            gtag('config', '{{ site.google_analytics }}');
         </script>
 
         <!-- Meta Pixel Code -->
@@ -398,14 +398,14 @@
 
                 // Start rotation loop
                 setInterval(() => {
-                    // Morph out current
-                    slides[current].classList.remove('opacity-100', 'scale-100', 'blur-0');
+                    // Morph out current slide
                     slides[current].classList.add('opacity-0', 'scale-95', 'blur-sm');
+                    slides[current].classList.remove('opacity-100', 'scale-100', 'blur-0');
 
                     // Advance index
                     current = (current + 1) % slides.length;
 
-                    // Morph in next
+                    // Morph in next slide
                     slides[current].classList.remove('opacity-0', 'scale-95', 'blur-sm');
                     slides[current].classList.add('opacity-100', 'scale-100', 'blur-0');
                 }, 3000); // 3 seconds per slide
