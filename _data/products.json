@@ -1,13 +1,13 @@
 [
     {
-        "id": "OE-02",
+        "id": "OE-6001",
         "name": "Tyrus",
         "subtitle": "Boost & Envelope Wavefolder",
         "price": 199,
         "category": "Modulation",
         "images": [
-            "assets/Tyrus1.png",
-            "assets/Tyrus2.png"
+            "/assets/products//6001_f_1k",
+            "/assets/products//6001_a2_1k"
         ],
         "specs": { "bypass": "Buffered", "draw": "85mA", "power": "9V DC", "origin": "The Fold Point" },
         "features": [
@@ -19,14 +19,14 @@
         "desc": "Tyrus is an expressive wavefolding instrument shaped by touch, force, and balance. Guided by Apollo and the sacred swans said to carry his voice, it explores that precise moment when harmony is gently persuaded into transformation. This is not a conventional distortion pedal, nor is it interested in pretending to be one. At its core, Tyrus pairs an always-on analog boost with an envelope-driven wavefolder, allowing sound to respond naturally to how it's played. Play lightly and the tone remains open and articulate. Dig in and the waveform bends, blooms, and fractures; revealing harmonics that feel reactive, vocal, and very much alive. Tyrus doesn't compress your playing into obedience; it listens, then responds."
    },
     {
-        "id": "OE-03",
+        "id": "OE-6003",
         "name": "Eclipse",
         "subtitle": "Dual Filter",
         "price": 229,
         "category": "Modulation",
         "images": [
-            "assets/Eclipse1.png",
-            "assets/Eclipse2.png"
+            "/assets/products//6003_f_1k",
+            "/assets/products//6003_a2_1k"
         ],
         "specs": { "bypass": "True Bypass", "draw": "130mA", "power": "9V DC", "origin": "When the Light Looked Away" },
         "features": [
@@ -39,14 +39,14 @@
         "extendedInfo": ""
     },
     {
-        "id": "OE-04",
+        "id": "OE-6004",
         "name": "Aeon",
         "subtitle": "Delay & Octave",
         "price": 249,
         "category": "Time",
         "images": [
-            "assets/Aeon1.png",
-            "assets/Aeon2.png"
+            "/assets/products//6004_f_1k",
+            "/assets/products//6004_a2_1k"
         ],
         "specs": { "bypass": "Buffered", "draw": "85mA", "power": "9V DC", "origin": "Later Than Expected" },
         "features": [
@@ -59,14 +59,14 @@
         "extendedInfo": ""
     },
     {
-        "id": "OE-05",
+        "id": "OE-6005",
         "name": "Maelstrom",
         "subtitle": "Total Noise Generator",
         "price": 199,
         "category": "Fuzz",
         "images": [
-            "assets/Maelstrom2.png",
-            "assets/Maelstrom1.png"
+            "/assets/products//6005_f_1k",
+            "/assets/products//6005_a2_1k"
         ],
         "specs": { "bypass": "True Bypass", "draw": "40mA", "power": "9V DC", "origin": "Hell (With Notes)" },
         "features": [
@@ -80,14 +80,14 @@
 
     },
     {
-        "id": "OE-01",
+        "id": "OE-6002",
         "name": "Pyr",
         "subtitle": "Expressive Distortion",
         "price": 189,
         "category": "Fuzz",
         "images": [
-            "assets/Pyr1.png",
-            "assets/Pyr2.png"
+            "/assets/products//6002_f_1k",
+            "/assets/products//6002_a2_1k"
         ],
         "specs": { "bypass": "Buffered", "draw": "15mA", "power": "9V DC", "origin": "A Controlled Burn" },
         "features": [

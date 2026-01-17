@@ -523,6 +523,8 @@
             function updateCarousel() {
                 if (!currentProduct) return;
 
+                const webpSource = document.getElementById('modal-img-webp');
+                const pngSource = document.getElementById('modal-img-png');
                 const img = document.getElementById('modal-img');
                 const prevBtn = document.getElementById('prev-btn');
                 const nextBtn = document.getElementById('next-btn');
@@ -530,8 +532,13 @@
 
                 // Set Image
                 if (currentProduct.images && currentProduct.images.length > 0) {
-                    img.src = currentProduct.images[currentImageIndex];
+                    const baseImagePath = currentProduct.images[currentImageIndex];
+                    webpSource.srcset = `${baseImagePath}.webp`;
+                    pngSource.srcset = `${baseImagePath}.png`;
+                    img.src = `${baseImagePath}.png`;
                 } else {
+                    webpSource.srcset = '';
+                    pngSource.srcset = '';
                     img.src = '';
                 }
 
