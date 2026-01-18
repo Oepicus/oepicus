@@ -2,7 +2,9 @@
 <nav class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 w-full pointer-events-none">
     <div class="pointer-events-auto glass rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center justify-between gap-4 md:gap-8 shadow-2xl shadow-black/50 transition-all duration-300 hover:border-brand-gold/30 w-full max-w-[90%] md:max-w-max bg-black/40">
         <button class="md:hidden text-white hover:text-brand-gold transition-colors p-2" onclick="toggleMenu()">
-            <i data-lucide="menu" class="w-5 h-5"></i>
+            <svg class="w-5 h-5">
+                <use xlink:href="#lucide-menu"></use>
+            </svg>
         </button>
         <a href="#" class="flex items-center gap-2 group" onclick="window.scrollTo(0,0)">
             <picture>
@@ -19,14 +21,18 @@
         </div>
         <!-- Cart Button Hidden/Modified as per request to focus on pledging, but keeping DOM structure for now, made invisible or changed interaction -->
         <button class="relative p-2 hover:bg-white/10 rounded-full transition-colors group hidden" onclick="toggleCart()">
-            <i data-lucide="shopping-bag" class="w-5 h-5 group-hover:text-brand-gold transition-colors"></i>
+            <svg class="w-5 h-5 group-hover:text-brand-gold transition-colors">
+                <use xlink:href="#lucide-shopping-bag"></use>
+            </svg>
         </button>
     </div>
 </nav>
 <!-- Mobile Menu Overlay -->
 <div id="mobile-menu" class="fixed inset-0 bg-black/90 z-40 transform -translate-y-full transition-transform duration-500 flex flex-col justify-center items-center gap-8 backdrop-blur-xl">
     <button class="absolute top-8 right-8 text-white/50 hover:text-white p-4" onclick="toggleMenu()">
-        <i data-lucide="x" class="w-8 h-8"></i>
+        <svg class="w-8 h-8">
+            <use xlink:href="#lucide-x"></use>
+        </svg>
     </button>
     <a href="/#philosophy" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">ORIGINS</a>
     <a href="/#products" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">INSTRUMENTS</a>

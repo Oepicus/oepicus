@@ -70,9 +70,8 @@
         <link href="/assets/css/style.css" rel="stylesheet">
 
         <!-- Icons -->
-        <!-- <script src="/assets/js/lucide.js"></script> -->
-        <script src="/assets/lucide.js"></script>
-        <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+        <!-- Icons are now an SVG sprite included in the body -->
+
 
         <style>
             /* Base */
@@ -309,6 +308,9 @@
 
     <body class="bg-void text-text-main font-sans antialiased selection:bg-brand-gold selection:text-brand-dark overflow-x-hidden relative">
 
+        <!-- SVG Icon Sprite -->
+        {% include lucide-sprite.svg %}
+
         <!-- CANVAS BACKGROUND (PARTICLES) -->
         <canvas id="particle-canvas" class="fixed inset-0 z-0 pointer-events-none"></canvas>
 
@@ -423,7 +425,6 @@
             let touchEndX = 0;
 
             function init() {
-                lucide.createIcons();
                 setupObservers();
                 initHeroCarousel(); // Initialize Hero Slideshow
                 setupSwipe(); // Initialize Modal Swipe
@@ -517,7 +518,6 @@
                     card.classList.add('opacity-100', 'translate-y-0', 'md:scale-100');
                 }, 20);
                 document.body.style.overflow = 'hidden';
-                lucide.createIcons(); // Refresh icons inside modal
             }
 
             function updateCarousel() {

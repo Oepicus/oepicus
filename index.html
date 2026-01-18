@@ -29,7 +29,9 @@ changefreq: daily
                     Browse Collection
                 </a>
                 <button onclick="document.getElementById('video-modal').classList.remove('hidden')" class="px-8 py-4 border border-white/20 rounded-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2 text-white tracking-widest uppercase text-sm group">
-                    <i data-lucide="play-circle" class="w-4 h-4 group-hover:text-brand-gold transition-colors"></i> Watch Film
+                    <svg class="w-4 h-4 group-hover:text-brand-gold transition-colors">
+                        <use xlink:href="#lucide-play-circle"></use>
+                    </svg> Watch Film
                 </button>
             </div>
         </div>
@@ -80,7 +82,7 @@ changefreq: daily
             </p>
             <img src="assets/kickstarter_logo_2019.svg" alt="Kickstarter" class="h-5">
             <p class="text-white/80 text-lg md:text-xl">
-                February 2026
+                MARCH 2026
             </p>
         </div>
 
@@ -93,14 +95,16 @@ changefreq: daily
         </p>
         <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" data-form="subscribe">
             <div class="relative flex-1">
-                <i data-lucide="mail" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4"></i>
+                <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4">
+                    <use xlink:href="#lucide-mail"></use>
+                </svg>
                 <input type="email" name="email" placeholder="ENTER EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
             </div>
             <!-- Hidden field for tags -->
             <input type="hidden" name="tags" value="{{ site.app_name }}_landing_page">
 
             <button type="submit" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors rounded-sm h-14 flex items-center justify-center gap-2 text-xs">
-                GRAB UPDATES <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                GRAB UPDATES <svg class="w-4 h-4"><use xlink:href="#lucide-arrow-right"></use></svg>
             </button>
         </form>
         <div class="response-message mt-3"></div>
@@ -121,7 +125,9 @@ changefreq: daily
         <!-- Item 1 -->
         <div class="flex flex-col items-center text-center group cursor-default">
             <div class="p-4 rounded-full bg-brand-gold/5 border border-brand-gold/10 group-hover:bg-brand-gold/20 group-hover:border-brand-gold/30 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.1)] group-hover:shadow-[0_0_25px_rgba(197,160,89,0.3)]">
-                <i data-lucide="shield-check" class="text-brand-gold w-8 h-8 md:w-10 md:h-10"></i>
+                <svg class="text-brand-gold w-8 h-8 md:w-10 md:h-10">
+                    <use xlink:href="#lucide-shield-check"></use>
+                </svg>
             </div>
             <h3 class="text-white font-display font-bold tracking-widest text-lg md:text-xl mb-1 uppercase">Built To Last (Realistically)</h3>
             <p class="text-text-muted text-xs md:text-sm font-light tracking-wider max-w-xs">Lifetime Warranty — nothing lasts forever, just cover the shipping</p>
@@ -132,7 +138,9 @@ changefreq: daily
         <!-- Item 2 -->
         <div class="flex flex-col items-center text-center group cursor-default">
             <div class="p-4 rounded-full bg-brand-gold/5 border border-brand-gold/10 group-hover:bg-brand-gold/20 group-hover:border-brand-gold/30 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.1)] group-hover:shadow-[0_0_25px_rgba(197,160,89,0.3)]">
-                <i data-lucide="cpu" class="text-brand-gold w-8 h-8 md:w-10 md:h-10"></i>
+                <svg class="text-brand-gold w-8 h-8 md:w-10 md:h-10">
+                    <use xlink:href="#lucide-cpu"></use>
+                </svg>
             </div>
             <h3 class="text-white font-display font-bold tracking-widest text-lg md:text-xl mb-1 uppercase">Precision by Design</h3>
             <p class="text-text-muted text-xs md:text-sm font-light tracking-wider">In-House SMT Manufacturing</p>
@@ -143,7 +151,9 @@ changefreq: daily
         <!-- Item 3 -->
         <div class="flex flex-col items-center text-center group cursor-default">
             <div class="p-4 rounded-full bg-brand-gold/5 border border-brand-gold/10 group-hover:bg-brand-gold/20 group-hover:border-brand-gold/30 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.1)] group-hover:shadow-[0_0_25px_rgba(197,160,89,0.3)]">
-                <i data-lucide="globe" class="text-brand-gold w-8 h-8 md:w-10 md:h-10"></i>
+                <svg class="text-brand-gold w-8 h-8 md:w-10 md:h-10">
+                    <use xlink:href="#lucide-globe"></use>
+                </svg>
             </div>
             <h3 class="text-white font-display font-bold tracking-widest text-lg md:text-xl mb-1 uppercase">Built in Epic Surroundings</h3>
             <p class="text-text-muted text-xs md:text-sm font-light tracking-wider">Global Distribution Ready</p>
@@ -336,7 +346,9 @@ changefreq: daily
                     </div>
                     <div class="flex gap-2 mt-6">
                         <button onclick="openProductModal('{{ p.name }}')" class="flex-1 px-4 py-3 bg-white/5 hover:bg-brand-gold border border-white/20 hover:border-brand-gold rounded-sm text-white hover:text-brand-dark transition-colors uppercase tracking-widest text-xs font-bold flex items-center justify-center gap-2">
-                            <i data-lucide="scan-line" class="w-4 h-4"></i> Inspect Instrument
+                            <svg class="w-4 h-4">
+                                <use xlink:href="#lucide-scan-line"></use>
+                            </svg> Inspect Instrument
                         </button>
                     </div>
                 </div>
@@ -356,7 +368,9 @@ changefreq: daily
             <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
                 <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
                     <span class="font-medium text-lg text-white">1. Are these guitar pedals?</span>
-                    <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                    <svg class="text-brand-gold transition-transform group-hover:rotate-90 w-6 h-6">
+                        <use xlink:href="#lucide-plus"></use>
+                    </svg>
                 </button>
                 <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
                     <div class="p-6 pt-0 text-text-muted text-sm md:text-base">
@@ -369,7 +383,9 @@ changefreq: daily
             <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
                 <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
                     <span class="font-medium text-lg text-white">2. What's the Warranty situation?</span>
-                    <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                    <svg class="text-brand-gold transition-transform group-hover:rotate-90 w-6 h-6">
+                        <use xlink:href="#lucide-plus"></use>
+                    </svg>
                 </button>
                 <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
                     <div class="p-6 pt-0 text-text-muted text-sm md:text-base">
@@ -383,7 +399,9 @@ changefreq: daily
             <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
                 <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
                     <span class="font-medium text-lg text-white">3. Do I need modular or CV experience to use these?</span>
-                    <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                    <svg class="text-brand-gold transition-transform group-hover:rotate-90 w-6 h-6">
+                        <use xlink:href="#lucide-plus"></use>
+                    </svg>
                 </button>
                 <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
                     <div class="p-6 pt-0 text-text-muted text-sm md:text-base">Not at all. Each instrument works perfectly well on its own. CV inputs are there to expand what's possible, not to demand prior study. You can ignore them entirely, or explore them later when curiosity (or confidence) strikes.</div>
@@ -392,7 +410,9 @@ changefreq: daily
             <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
                 <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
                     <span class="font-medium text-lg text-white">4. When will the instruments ship?</span>
-                    <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                    <svg class="text-brand-gold transition-transform group-hover:rotate-90 w-6 h-6">
+                        <use xlink:href="#lucide-plus"></use>
+                    </svg>
                 </button>
                 <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
                     <div class="p-6 pt-0 text-text-muted text-sm md:text-base">If the campaign is successfully funded, production will begin shortly after. We estimate shipping to backers 3&ndash;4 months after the campaign ends, and we'll provide regular updates so you'll know exactly what's happening&mdash;and why&mdash;along the way.</div>
@@ -401,7 +421,9 @@ changefreq: daily
             <div class="glass rounded-xl overflow-hidden group border border-white/5 hover:border-brand-gold/30 transition-colors">
                 <button class="w-full p-6 text-left flex justify-between items-center" onclick="toggleAccordion(this)">
                     <span class="font-medium text-lg text-white">5. Have you delivered a Kickstarter project before?</span>
-                    <i data-lucide="plus" class="text-brand-gold transition-transform group-hover:rotate-90"></i>
+                    <svg class="text-brand-gold transition-transform group-hover:rotate-90 w-6 h-6">
+                        <use xlink:href="#lucide-plus"></use>
+                    </svg>
                 </button>
                 <div class="accordion-content h-0 overflow-hidden transition-all duration-300">
                     <div class="p-6 pt-0 text-text-muted text-sm md:text-base">Yes. Our parent company, 1V/OCT, successfully launched and delivered The Centre: Eurorack Modular Wavetable Synthesiser on Kickstarter in 2021. We've taken complex audio hardware from concept to backers' hands before, and we fully intend to do it again.</div>
@@ -425,7 +447,9 @@ changefreq: daily
                     <h3 class="text-xl font-display font-bold text-white mb-2">Talk to us on Discord</h3>
                     <p class="text-text-muted text-sm mb-4">The main hub for community discussion, support, and sneak peeks.</p>
                     <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
-                        Join Server <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        Join Server <svg class="w-4 h-4 transition-transform group-hover:translate-x-1">
+                            <use xlink:href="#lucide-arrow-right"></use>
+                        </svg>
                     </span>
                 </div>
             </a>
@@ -437,7 +461,9 @@ changefreq: daily
                     <h3 class="text-xl font-display font-bold text-white mb-2">Group Chat on WhatsApp</h3>
                     <p class="text-text-muted text-sm mb-4">For general discussion and quick questions with the community.</p>
                     <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
-                        Join Chat <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        Join Chat <svg class="w-4 h-4 transition-transform group-hover:translate-x-1">
+                            <use xlink:href="#lucide-arrow-right"></use>
+                        </svg>
                     </span>
                 </div>
             </a>
@@ -449,7 +475,9 @@ changefreq: daily
                     <h3 class="text-xl font-display font-bold text-white mb-2">Updates on WhatsApp</h3>
                     <p class="text-text-muted text-sm mb-4">A broadcast-only channel for the latest news and announcements.</p>
                     <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
-                        Follow Channel <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        Follow Channel <svg class="w-4 h-4 transition-transform group-hover:translate-x-1">
+                            <use xlink:href="#lucide-arrow-right"></use>
+                        </svg>
                     </span>
                 </div>
             </a>
@@ -463,7 +491,22 @@ changefreq: daily
                     <h3 class="text-xl font-display font-bold text-white mb-2">Follow us on TikTok</h3>
                     <p class="text-text-muted text-sm mb-4">For short-form content, behind-the-scenes, and sound demos.</p>
                     <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
-                        Follow Us <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        Follow Us <svg class="w-4 h-4 transition-transform group-hover:translate-x-1">
+                            <use xlink:href="#lucide-arrow-right"></use>
+                        </svg>
+                    </span>
+                </div>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com/@Oepicus" target="_blank" class="glass p-8 rounded-xl flex flex-col items-center gap-6 border border-white/5 hover:border-brand-gold/30 transition-colors duration-300 group">
+                <img src="assets/qr/youtube_oepicus_channel.svg" alt="TikTok QR Code" class="w-40 h-40 rounded-lg bg-white p-2">
+                <div class="text-center">
+                    <h3 class="text-xl font-display font-bold text-white mb-2">YouTube Channel</h3>
+                    <p class="text-text-muted text-sm mb-4">For short-form content, behind-the-scenes, and sound demos.</p>
+                    <span class="inline-flex items-center gap-2 text-brand-gold font-bold text-sm uppercase tracking-widest">
+                        Wartch Now <svg class="w-4 h-4 transition-transform group-hover:translate-x-1">
+                            <use xlink:href="#lucide-arrow-right"></use>
+                        </svg>
                     </span>
                 </div>
             </a>
@@ -474,14 +517,16 @@ changefreq: daily
         <p class="text-text-muted mb-8 text-sm">Get the latest signals from Oepicus, including product announcements, articles, and exclusive offers.</p>
         <form class="flex flex-col sm:flex-row gap-4" data-form="subscribe">
             <div class="relative flex-1">
-                <i data-lucide="mail" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4"></i>
+                <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50 w-4 h-4">
+                    <use xlink:href="#lucide-mail"></use>
+                </svg>
                 <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" class="w-full bg-black/30 border border-white/20 text-white placeholder-white/50 py-4 pl-12 pr-4 focus:outline-none focus:border-brand-gold transition-colors text-xs tracking-widest uppercase rounded-sm h-14">
             </div>
             <!-- Hidden field for tags -->
             <input type="hidden" name="tags" value="{{ site.app_name }}_landing_page_footer">
 
             <button type="submit" class="bg-brand-gold text-brand-dark font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors rounded-sm h-14 flex items-center justify-center gap-2 text-xs">
-                Subscribe <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                Subscribe <svg class="w-4 h-4"><use xlink:href="#lucide-arrow-right"></use></svg>
             </button>
         </form>
         <div class="response-message mt-3"></div>
@@ -496,10 +541,14 @@ changefreq: daily
     <div class="absolute right-0 top-0 h-full w-full sm:max-w-md glass-heavy shadow-2xl transform translate-x-full transition-transform duration-500 ease-out pointer-events-auto flex flex-col border-l border-brand-gold/10" id="cart-panel">
         <div class="p-6 border-b border-white/10 flex justify-between items-center">
             <h2 class="font-display text-2xl font-bold text-white">Cart</h2>
-            <button onclick="toggleCart()" class="text-text-muted hover:text-white transition-colors p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <button onclick="toggleCart()" class="text-text-muted hover:text-white transition-colors p-2">
+                <svg class="w-6 h-6"><use xlink:href="#lucide-x"></use></svg>
+            </button>
         </div>
         <div class="flex-1 flex flex-col justify-center items-center text-center p-8 space-y-6">
-            <div class="w-20 h-20 rounded-full bg-brand-gold/10 flex items-center justify-center mb-4 border border-brand-gold/20"><i data-lucide="shopping-bag" class="w-8 h-8 text-brand-gold"></i></div>
+            <div class="w-20 h-20 rounded-full bg-brand-gold/10 flex items-center justify-center mb-4 border border-brand-gold/20">
+                <svg class="w-8 h-8 text-brand-gold"><use xlink:href="#lucide-shopping-bag"></use></svg>
+            </div>
             <h3 class="text-xl font-medium text-white">Store Offline</h3>
             <p class="text-text-muted max-w-xs text-sm">The commerce engine is currently in diagnostic mode. Sign up for launch notifications.</p>
             <div class="w-full pt-8 border-t border-white/10 mt-4">
@@ -513,7 +562,9 @@ changefreq: daily
 <div id="product-modal" class="fixed inset-0 z-[90] hidden flex items-end md:items-center justify-center px-0 md:px-4 pb-0 md:pb-4">
     <div class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300" onclick="closeProductModal()"></div>
     <div class="relative w-full md:max-w-5xl glass-heavy md:rounded-2xl rounded-t-2xl shadow-2xl overflow-hidden flex flex-col md:grid md:grid-cols-2 opacity-0 translate-y-20 md:scale-95 transition-all duration-300 transform h-[92vh] md:h-[85vh]" id="modal-card">
-        <button onclick="closeProductModal()" class="absolute top-4 right-4 z-50 bg-black/50 p-2 rounded-full text-white hover:text-brand-gold backdrop-blur-md"><i data-lucide="x" class="w-6 h-6"></i></button>
+        <button onclick="closeProductModal()" class="absolute top-4 right-4 z-50 bg-black/50 p-2 rounded-full text-white hover:text-brand-gold backdrop-blur-md">
+            <svg class="w-6 h-6"><use xlink:href="#lucide-x"></use></svg>
+        </button>
 
         <!-- Modal Image Side with Carousel -->
         <div class="bg-gradient-to-br from-black/60 to-transparent p-6 md:p-12 flex items-center justify-center relative h-[35%] md:h-auto shrink-0 border-b border-white/5 md:border-b-0 md:border-r carousel-container group" id="modal-image-container">
@@ -528,8 +579,12 @@ changefreq: daily
             <div class="absolute inset-0 bg-brand-gold/5 rounded-full filter blur-3xl scale-75"></div>
 
             <!-- Carousel Navigation -->
-            <button id="prev-btn" class="carousel-btn left-4 hidden" onclick="prevSlide()"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
-            <button id="next-btn" class="carousel-btn right-4 hidden" onclick="nextSlide()"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+            <button id="prev-btn" class="carousel-btn left-4 hidden" onclick="prevSlide()">
+                <svg class="w-6 h-6"><use xlink:href="#lucide-chevron-left"></use></svg>
+            </button>
+            <button id="next-btn" class="carousel-btn right-4 hidden" onclick="nextSlide()">
+                <svg class="w-6 h-6"><use xlink:href="#lucide-chevron-right"></use></svg>
+            </button>
 
             <!-- Dots -->
             <div id="carousel-dots" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-20"></div>
@@ -578,7 +633,9 @@ changefreq: daily
 <!-- Video Modal -->
 <div id="video-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/95 backdrop-blur px-4" onclick="this.classList.add('hidden')">
     <div class="text-center">
-        <i data-lucide="film" class="w-12 h-12 md:w-16 md:h-16 text-white/20 mx-auto mb-4"></i>
+        <svg class="w-12 h-12 md:w-16 md:h-16 text-white/20 mx-auto mb-4">
+            <use xlink:href="#lucide-film"></use>
+        </svg>
         <p class="text-lg md:text-xl text-white font-display">Brand Film Coming Soon</p>
         <p class="text-text-muted text-xs md:text-sm mt-2">Tap anywhere to close</p>
     </div>
