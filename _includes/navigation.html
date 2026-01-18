@@ -28,12 +28,13 @@
     </div>
 </nav>
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-black/90 z-40 transform -translate-y-full transition-transform duration-500 flex flex-col justify-center items-center gap-8 backdrop-blur-xl" role="dialog" aria-modal="true">
+<div id="mobile-menu" class="fixed inset-0 bg-black/90 z-40 transform -translate-y-full transition-transform duration-500 flex flex-col justify-center items-center gap-8 backdrop-blur-xl" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
     <button class="absolute top-8 right-8 text-white/50 hover:text-white p-4" onclick="toggleMenu()" aria-label="Close Menu">
         <svg class="w-8 h-8">
             <use xlink:href="#lucide-x"></use>
         </svg>
     </button>
+    <h2 id="mobile-menu-title" class="sr-only">Mobile Navigation Menu</h2>
     <a href="/#philosophy" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">ORIGINS</a>
     <a href="/#products" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">INSTRUMENTS</a>
     <a href="/#contact" class="text-3xl font-display font-bold hover:text-brand-gold tracking-widest" onclick="toggleMenu()">CONNECT</a>
