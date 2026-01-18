@@ -7,7 +7,7 @@ sitemap:
 ---
 
 <!-- Journal Header Section -->
-<header class="relative flex justify-center pt-48 md:pt-56 pb-24 md:pb-32 px-6 z-10">
+<header class="relative flex justify-center pt-48 md:pt-56 pb-24 md:pb-32 px-6 z-10" role="banner">
     <div class="max-w-7xl mx-auto text-center fade-in-up z-20">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-bold leading-tight tracking-tight">
             <span class="text-gradient glitch-hover cursor-default">THE JOURNEY</span>
@@ -19,7 +19,7 @@ sitemap:
 </header>
 
 <!-- Blog Posts Section -->
-<section id="journal-posts" class="py-16 md:py-24 px-6 relative z-10">
+<section id="journal-posts" class="py-16 md:py-24 px-6 relative z-10" role="region" aria-label="Journal Posts">
     <div class="max-w-7xl mx-auto">
         <div class="space-y-16">
             {% for post in site.posts %}
