@@ -566,7 +566,7 @@ changefreq: daily
 <div id="product-modal" class="fixed inset-0 z-[90] hidden flex items-end md:items-center justify-center px-0 md:px-4 pb-0 md:pb-4">
     <div class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300" onclick="closeProductModal()"></div>
     <div class="relative w-full md:max-w-5xl glass-heavy md:rounded-2xl rounded-t-2xl shadow-2xl overflow-hidden flex flex-col md:grid md:grid-cols-2 opacity-0 translate-y-20 md:scale-95 transition-all duration-300 transform h-[92vh] md:h-[85vh]" id="modal-card">
-        <button onclick="closeProductModal()" class="absolute top-4 right-4 z-50 bg-black/50 p-2 rounded-full text-white hover:text-brand-gold backdrop-blur-md">
+        <button onclick="closeProductModal()" class="absolute top-4 right-4 z-50 bg-black/50 p-2 rounded-full text-white hover:text-brand-gold backdrop-blur-md" aria-label="Close product modal">
             <svg class="w-6 h-6"><use xlink:href="#lucide-x"></use></svg>
         </button>
 
@@ -583,10 +583,10 @@ changefreq: daily
             <div class="absolute inset-0 bg-brand-gold/5 rounded-full filter blur-3xl scale-75"></div>
 
             <!-- Carousel Navigation -->
-            <button id="prev-btn" class="carousel-btn left-4 hidden" onclick="prevSlide()">
+            <button id="prev-btn" class="carousel-btn left-4 hidden" onclick="prevSlide()" aria-label="Previous image">
                 <svg class="w-6 h-6"><use xlink:href="#lucide-chevron-left"></use></svg>
             </button>
-            <button id="next-btn" class="carousel-btn right-4 hidden" onclick="nextSlide()">
+            <button id="next-btn" class="carousel-btn right-4 hidden" onclick="nextSlide()" aria-label="Next image">
                 <svg class="w-6 h-6"><use xlink:href="#lucide-chevron-right"></use></svg>
             </button>
 
