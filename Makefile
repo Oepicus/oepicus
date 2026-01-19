@@ -74,6 +74,10 @@ build-us: setup-us
 # --- SETUP & CLEANUP ---
 
 
+serve:
+	@echo "--> Serving site locally at http://localhost:4000 ..."
+	bundle exec jekyll serve
+	
 
 
 setup-com:

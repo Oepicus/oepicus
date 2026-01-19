@@ -29,20 +29,26 @@ for file_path in "$SOURCE_DIR"/600*; do
     # Get just the filename from the full path
     filename=$(basename "$file_path")
 
+    # Define destination paths
+    dest_original_path="$DEST_DIR/$filename"
+
     # Create the new filename by replacing the old extension with .webp
     # ${filename%.*} removes the extension from the original filename.
     webp_filename="${filename%.*}.webp"
     output_path="$DEST_DIR/$webp_filename"
 
-    # Use cwebp to convert the image.
-    # -q 80 sets the quality to 80/100 (a good balance for web images).
-    # The command will overwrite the destination file if it already exists.
-    echo "Copying '$filename' to '$webp_filename'..."
-    cp "$file_path" $DEST_DIR/
-    echo "Converting '$filename' to '$webp_filename'..."
-    cwebp -q 80 "$file_path" -o "$output_path"
+    # Only copy if the source is newer or the destination doesn't exist
+    if [ ! -f "$dest_original_path" ] || [ "$file_path" -nt "$dest_original_path" ]; then
+      echo "Copying '$filename' to '$DEST_DIR'..."
+      cp "$file_path" "$dest_original_path"
+    fi
+
+    # Only convert to webp if the source is newer or the webp file doesn't exist
+    if [ ! -f "$output_path" ] || [ "$file_path" -nt "$output_path" ]; then
+      echo "Converting '$filename' to '$webp_filename'..."
+      cwebp -q 80 "$file_path" -o "$output_path"
+    fi
   fi
 done
 
 echo "Conversion complete. Files are in $DEST_DIR"
-
