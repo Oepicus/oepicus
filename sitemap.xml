@@ -23,10 +23,15 @@ sitemap: false
     {% endunless %}
   {% endfor %}
 
-  {% for page in site.pages %}
-    {% unless page.sitemap == false or page.path contains '404' or page.extname == '.xml' or page.extname == '.css' or page.extname == '.js' %}
+{% for page in site.pages %}
+  {% unless page.sitemap == false 
+     or page.path contains '404' 
+     or page.path contains 'assets/'
+     or page.url contains '.css'
+     or page.url contains '.js'
+     or page.url contains '.xml' %} 
     <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
+      <loc>{{ site.url }}{{ page.url | remove: '/index.html' }}</loc>  <!-- optional cleanup -->
       <lastmod>
         {%- if page.last_modified_at -%}
           {{ page.last_modified_at | date_to_xmlschema }}
@@ -35,8 +40,7 @@ sitemap: false
         {%- endif -%}
       </lastmod>
       <changefreq>{{ page.sitemap.changefreq | default: 'monthly' }}</changefreq>
-      <priority>{{ page.sitemap.priority   | default: '0.5' }}</priority>
+      <priority>{{ page.sitemap.priority | default: '0.5' }}</priority>
     </url>
-    {% endunless %}
-  {% endfor %}
-</urlset>
+  {% endunless %}
+{% endfor %}</urlset>
