@@ -69,11 +69,11 @@
         ],
         "specs": { "bypass": "Buffered", "draw": "40mA", "power": "9V DC", "origin": "Hell (With Notes)" },
         "features": [
-            "<strong>Tri-Engine Gain Architecture</strong><br><span class=\"text-text-muted font-light\">DS-1–inspired distortion, Big Muff–style trasistor fuzz, and TS-9–influenced overdrive coexist in a single system, each contributing its own opinion about how sound should be treated.</span>",
+            "<strong>Tri-Engine Gain Architecture</strong><br><span class=\"text-text-muted font-light\">DS-1–inspired distortion, Big Muff–style transistor fuzz, and TS-9–influenced overdrive coexist in a single system, each contributing its own opinion about how sound should be treated.</span>",
             "<strong>Controlled Instability</strong><br><span class=\"text-text-muted font-light\">Capable of tight, aggressive tones or expansive, self-interacting noise fields, depending largely on how much you encourage it.</span>",
             "<strong>Designed for Play, Not Safety</strong><br><span class=\"text-text-muted font-light\">Rewards curiosity, attention, and a willingness to listen carefully before turning the next knob.</span>"
         ],
-        "desc": "Born from one of Apollos less orderly moods, Maelstrom explores what happens when a signal is encouraged—repeatedly and with enthusiasm—to argue with itself. It is not a polite pedal, and it makes no promises about behaving sensibly once invited into your signal chain.\n\n By cannibalizing its own signal through a network of pitch-shifting and gain stages, Maelstrom forces distortion, fuzz, and overdrive to collide in ways that are occasionally musical and frequently enlightening. It is built for rigs that value exploration over safety and the occasional moment of brave, loud decision-making.\n Warning: Output levels may reach values best described as 'holy moly.' Consider your speakers (and your neighbors) before you go full-throttle.",
+        "desc": "Born from one of Apollos less orderly moods, Maelstrom explores what happens when a signal is encouraged—repeatedly and with enthusiasm—to argue with itself. It is not a polite pedal, and it makes no promises about behaving sensibly once invited into your signal chain.\n\n By cannibalizing its own signal through a network of pitch-shifting and gain stages, Maelstrom forces distortion, fuzz, and overdrive to collide in ways that are occasionally musical and frequently enlightening. It is built for rigs that value exploration over safety and the occasional moment of brave, loud decision-making.\n\n Warning: Output levels may reach values best described as 'holy moly.' Consider your speakers (and your neighbors) before you go full-throttle.",
         "extendedInfo": ""
 
     },
