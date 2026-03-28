@@ -311,9 +311,6 @@
         <!-- SVG Icon Sprite -->
         {% include lucide-sprite.svg %}
 
-        <!-- CANVAS BACKGROUND (PARTICLES) -->
-        <canvas id="particle-canvas" class="fixed inset-0 z-0 pointer-events-none"></canvas>
-
         <!-- SCANLINES OVERLAY -->
         <div class="scanlines"></div>
 
@@ -344,65 +341,6 @@
 
 
         <script>
-            // --- ANIMATION ENGINE: VOID PARTICLES ---
-            const canvas = document.getElementById('particle-canvas');
-            const ctx = canvas.getContext('2d');
-            let width, height;
-            let particles = [];
-
-            function resize() {
-                width = canvas.width = window.innerWidth;
-                height = canvas.height = window.innerHeight;
-            }
-
-            class Particle {
-                constructor() {
-                    this.x = Math.random() * width;
-                    this.y = Math.random() * height;
-                    this.vx = (Math.random() - 0.5) * 0.5;
-                    this.vy = (Math.random() - 0.5) * 0.5;
-                    this.size = Math.random() * 3 + 1;
-                    this.alpha = Math.random() * 0.5 + 0.3;
-                    this.color = Math.random() > 0.5 ? '197, 160, 89' : '138, 37, 37';
-                }
-                update() {
-                    this.x += this.vx;
-                    this.y += this.vy;
-                    if (this.x < 0) this.x = width;
-                    if (this.x > width) this.x = 0;
-                    if (this.y < 0) this.y = height;
-                    if (this.y > height) this.y = 0;
-                }
-                draw() {
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(${this.color}, ${this.alpha})`;
-                    ctx.fill();
-                }
-            }
-
-            function initParticles() {
-                particles = [];
-                const count = Math.min(window.innerWidth / 8, 200);
-                for (let i = 0; i < count; i++) {
-                    particles.push(new Particle());
-                }
-            }
-
-            function animateParticles() {
-                ctx.clearRect(0, 0, width, height);
-                particles.forEach(p => {
-                    p.update();
-                    p.draw();
-                });
-                requestAnimationFrame(animateParticles);
-            }
-
-            window.addEventListener('resize', () => { resize(); initParticles(); });
-            resize();
-            initParticles();
-            animateParticles();
-
             // --- HERO CAROUSEL LOGIC ---
             function initHeroCarousel() {
                 const slides = document.querySelectorAll('.hero-slide');
