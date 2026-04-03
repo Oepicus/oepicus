@@ -1,22 +1,22 @@
 <!-- Floating Navigation -->
 <nav class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 w-full pointer-events-none">
-    <div class="pointer-events-auto glass rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center justify-between gap-4 md:gap-8 shadow-2xl shadow-black/50 transition-all duration-300 hover:border-brand-gold/30 w-full max-w-[90%] md:max-w-max bg-black/40" role="navigation" aria-label="Main">
+    <div class="pointer-events-auto glass rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center justify-between gap-4 md:gap-8 shadow-2xl shadow-black/50 transition-all duration-300 hover:border-brand-gold/30 w-full max-w-[90%] md:max-w-max bg-white/5" role="navigation" aria-label="Main">
         <button class="md:hidden text-white hover:text-brand-gold transition-colors p-2" onclick="toggleMenu()" aria-label="Toggle Menu">
             <svg class="w-5 h-5">
                 <use xlink:href="#lucide-menu"></use>
             </svg>
         </button>
-        <a href="#" class="flex items-center gap-2 group" onclick="window.scrollTo(0,0)">
+        <a href="/index.html" class="flex items-center gap-2 group" onclick="window.scrollTo(0,0)">
             <picture>
                 <source srcset="/assets/Oepicus_Logo_BKBG.svg" type="image/svg+xml">
                 <img src="/assets/Oepicus_Logo_BKBG.png" alt="OEPICUS" class="h-14 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-110 animate-pulse-slow">
             </picture>
         </a>
         <div class="hidden md:flex items-center gap-8 text-sm uppercase font-bold tracking-widest">
-            <a href="/#philosophy" class="hover:text-brand-gold transition-colors">Origins</a><a href="/instruments.html" class="hover:text-brand-gold transition-colors">Instruments</a>
-            <a href="/#contact" class="hover:text-brand-gold transition-colors">Connect</a>
+            <a href="/instruments.html" class="hover:text-brand-gold transition-colors">Instruments</a>
+            <a href="/origin.html" class="hover:text-brand-gold transition-colors">Origin</a>
             <a href="/journal.html" class="hover:text-brand-gold transition-colors">The Journey</a>
-            <a href="/#faq" class="hover:text-brand-gold transition-colors">Support</a>
+            <a href="/support.html" class="hover:text-brand-gold transition-colors">Support</a>
         </div>
         <!-- Cart Button Hidden/Modified as per request to focus on pledging, but keeping DOM structure for now, made invisible or changed interaction -->
         <button class="relative p-2 hover:bg-white/10 rounded-full transition-colors group hidden" onclick="toggleCart()" aria-label="Toggle Cart">
