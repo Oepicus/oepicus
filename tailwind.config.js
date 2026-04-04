@@ -26,7 +26,7 @@ module.exports = {
         '30': '30%',
       },
       colors: {
-        void: '#FBF0DF', // creme-marble-white
+        void: '#F9F9F9', // creme-marble-white
         panel: '#ffffff',
         brand: {
           gold: '#C5A059',
